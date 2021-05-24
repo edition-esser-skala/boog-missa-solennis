@@ -38,3 +38,57 @@ KyrieViolinoII = {
     c4 r8 d e d e4\fermata \bar "||" %32 finis
   }
 }
+
+ChristeViolinoII = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 3/4 \tempoChriste
+      \set Score.currentBarNumber = #33
+    r8 e'\fE c gis a f'
+    e16( gis,) a8 a, e'' e16( d) d( c)
+    d a h8 e, d' d16( c) c( h) %35
+    c gis a8 a,4 r8 e''
+    f16 cis d8 g, f' f8.(\trill e32 d)
+    e16 h c8 f, e' e8.(\trill d32 c)
+    d16 a h8 e, d' d8.(\trill c32 d)
+    c16 gis a8 a'4~ a16 g? f e %40
+    d c h a e4 gis'\trill
+    a, r r
+    R2.
+    r4 e'16 gis, a8 a,4
+    R2. %45
+    r4 g''16 h, c8 c,4
+    R2.*3
+    r8 g''\fE e h c a' %50
+    g16 h, c8 c, g'' g16( f) f( e)
+    f cis d8 g,, f'' f16( e) e( d)
+    e h c8 c,4 r8 g''
+    a16 e f8 a, a' a8.(\trill g32 f)
+    g16 d e8 g, g' g8.(\trill f32 e) %55
+    f16 cis d8 g, f' f8.(\trill e32 d)
+    e16 h c8 c'4~ c16 h a g
+    f e d c g,4 h'\trillE
+    c, r r
+    R2.*2 %61
+    r8 g'' e16 h c8 c,4
+    r8 a'' f16 cis d8 d,4
+    r8 h'' gis16 dis e8 e,4
+    R2. %65
+    r8 e'\f c16 gis a8 a, e''
+    f16\p cis d8 g, f' f8.(\trill e32 d)
+    e16 h c8 f, e' e8.(\trill d32 c)
+    d16 a h8 e, d' d8.(\trill c32 h)
+    c16 gis a8 a,4 r %70
+    R2.*4
+    r8 e''\f c gis a f' %75
+    e16 gis, a8 a, e'' e16( d) d( c)
+    d a h8 e, d' d16( c) c( h)
+    c gis a8 a,4 r8 e''
+    f16 cis d8 g, f' f8.(\trill e32 d)
+    e16 h c8 f, e' e8.(\trill d32 c) %80
+    d16 a h8 e, d' d8.(\trillE c32 h)
+    c16 gis a8 a'4~ a16 g? f e
+    d c h a e4 gis'\trill
+    a, r r\fermata \markKyrieDC \bar "||" %84 finis
+  }
+}

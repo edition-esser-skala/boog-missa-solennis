@@ -74,6 +74,121 @@ KyrieBassFigures = \figuremode {
   r1 %32 finis
 }
 
+ChristeOrgano = {
+  \relative c {
+    \clef bass
+    \key a \minor \time 3/4 \tempoChriste
+      \set Score.currentBarNumber = #33
+    \mvTr a4.\fE-\solo h8 c d
+    c4 r8 c' h a
+    h8. a16 gis8 h a gis %35
+    a a, r c h a
+    d4 r8 d' h g
+    c4 r8 c a a,
+    h4 r8 h' gis e
+    a4 c,8 h a c %40
+    f d e4 e,
+    a4.\pE h8 c a
+    gis4 gis'8 fis gis e
+    a4 r8 a, c a
+    d4 g8 g, h g %45
+    c4 r8 c e c
+    f16 cis d8 d, f g g'
+    a16 e f8 f, a' h h,
+    c a' g f g g,
+    c4.\fE d8 e f %50
+    e4 r8 e d c
+    d8. c16 h8 d c h
+    c8. d16 e8 c d e
+    f4 r8 d d, d'
+    e4 r8 c' c, c' %55
+    d8. c16 h8 d g, h
+    c4 e,8 d c e
+    a f g4 g,
+    c\pE r8 c e c
+    h8. a16 h8 g h c %60
+    d8. c16 h8 a h g
+    c4 r8 g' e c
+    f4 r8 a fis d
+    g4 r8 h gis e
+    a,8. h16 c8 a gis e %65
+    a4\fE r8 a c a
+    d4\pE r8 d' h g
+    c4 r8 c a a,
+    h4 r8 h' gis e
+    a a, r a h g %70
+    c c, r a' d h
+    e e, r e' e, d'
+    c h a4 r8 f'
+    d h e d e e,
+    a4.\fE h8 c d %75
+    c4 r8 c' h a
+    h8. a16 gis8 h a gis
+    a a, r c h a
+    d4 r8 d' h g
+    c4 r8 c a a, %80
+    h4 r8 h' gis e
+    a4 c,8 h a c
+    f d e4 e,
+    a r r\fermata \markKyrieDC \bar "||" %84 finis
+  }
+}
+
+ChristeBassFigures = \figuremode {
+  r4. <6\\>8 <[6]>4 %33
+  <6>2 <6\\>4
+  r <6>4. q8 %35
+  r2 <6\\>4
+  r2 <6 5>4
+  r2 <6 5>4
+  r2 <6 5>4
+  r <6>4. q8 %40
+  <6>4 <6 4> <5 _+>
+  r4. <6\\>
+  <6>2.
+  r
+  r %45
+  r
+  r4. <6>8 q4
+  r4. q8 q4
+  r <4> <3>
+  r4. <6>8 <[6]>4 %50
+  <6>2.
+  r4 q2
+  r4 q2
+  r2.
+  <6> %55
+  r4 <6 5>2
+  r4 <6>4. q8
+  <6>4 <6 4> <5 3>
+  r2.
+  <6> %60
+  r4 <6>2
+  r4. <_->
+  r <6\\>
+  r <6\\>
+  r4 <6> q %65
+  r2.
+  r2 <6 5>4
+  r2 <6 5>4
+  r2 <6 5>4
+  r2. %70
+  r2 <_+>8 <6\\>
+  <_+>2 r8 <\t>
+  r2.
+  r4 <4> <_+>
+  r4. <6\\>8 <6>4 %75
+  <6>2 <6\\>4
+  r <6>4. q8
+  r2 <6\\>4
+  r2 <6 5>4
+  r2 <6 5>4 %80
+  r2 <6 5>4
+  r <6>4. q8
+  <6>4 <6 4> <5 _+>
+  r2. %84 finis
+}
+
 % Organo = {
 %   \relative c {
 %     \clef bass

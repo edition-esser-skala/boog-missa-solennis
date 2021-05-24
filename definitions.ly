@@ -677,7 +677,14 @@ tocLabelLong = #(define-music-function
 
 
 tempoKyrie = \tempoMarkup "Adagio"
-tempoKyrieB = \tempoMarkup "Allegro"
+  tempoKyrieB = \tempoMarkup "Allegro"
+tempoChriste = \tempoMarkup "Andante"
+
+
+markKyrieDC = {
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+  \mark \markup { \remark "Kyrie Allegro da capo" }
+}
 
 
 \include "notes/clno1.ly"

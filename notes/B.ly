@@ -74,6 +74,56 @@ KyrieBassoLyrics = \lyricmode {
   son. %32 finis
 }
 
+ChristeBassoNotes = {
+  \relative c {
+    \clef bass
+    \key a \minor \time 3/4 \autoBeamOff \tempoChriste
+      \set Score.currentBarNumber = #33
+    R2.*9 %41
+    \mvTr a'4\pE^\solo e4. a8
+    h4 e,4. h'8
+    c8.([ a16)] a,4 r8 e'
+    f([ d'16 c] h8.[ g16)] g,8 f' %45
+    e8.([ d16)] c4 r8 g'
+    a4~ a16[ f e d] h'[ g f e]
+    c'4~ c16[ a g f] d'[ h g f]
+    e8 c' g2
+    c,4 r r %50
+    R2.*8 %58
+    g'4 c,4. c'8
+    d4 g,,4. g'8 %60
+    f4~ f16[ g a f] d8 g
+    e16[( d)] c8 r c b'8.([ a32 g]
+    a16[ e)] f8 r d s4
+    s2.*21 \bar "||" %84 finis
+  }
+}
+
+ChristeBassoLyrics = \lyricmode {
+  Chri -- ste e -- %42
+  lei -- son, e --
+  lei -- son, e --
+  lei -- son, e -- %45
+  lei -- son, e --
+  lei -- _
+  _ _
+  son, e -- lei --
+  son. %50
+
+  Chri -- ste e -- %59
+  lei -- son, e -- %60
+  lei -- son, e --
+  lei -- son, e --
+  lei -- son, e
+  % Chri -- ste e -- lei -- son,
+  % Chri -- ste e -- lei -- son,
+  % Chri -- ste e -- lei -- son,
+  % Chri -- ste e -- lei -- son,
+  % Chri -- ste e -- lei -- son,
+  % Chri -- ste e -- lei -- son,
+  % Chri -- ste e -- lei -- son,
+}
+
 % BassoNotes = {
 %   \relative c {
 %     \clef bass
