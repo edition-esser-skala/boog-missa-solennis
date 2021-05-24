@@ -92,3 +92,47 @@ ChristeViolinoII = {
     a, r r\fermata \markKyrieDC \bar "||" %84 finis
   }
 }
+
+GloriaViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoGloria
+    \sbOn \tuplet 3/2 8 { c'16\fE d e e f g a g a a, f' d } c8 h c4
+    \tuplet 3/2 8 { e16 f g a h c c h c c, d e d e fis g a h h a h h, c d }
+    \tuplet 3/2 8 { c d e fis g a a g a a, h c h d g e d c } h8 a\trill \sbOff
+    g16 g' g8\trill a, fis' g, d' d d
+    r e e e r f f f %5
+    r c e e e16 d d8 r \sbOn \tuplet 3/2 8 { c16 d e }
+    a,4 \tuplet 3/2 8 { a16 g a d e f } g,4 \tuplet 3/2 8 { g16 f g c d e }
+    f,4 \tuplet 3/2 8 { f16 e f h c d } e,8 \tuplet 3/2 8 { e16 f g a h c c d e }
+    g,8 h c e e4 d\trill
+    e8 c a16( f') f8 g,16( e') e8 d8. d16 %10
+    c4 r r2
+    \sbOn r8 \tuplet 3/2 8 { e16 d e f e f d c d } e4 r
+    R1
+    r8 \tuplet 3/2 8 { h16 a h c h c a g a } h4 r \sbOff
+    R1*2 %16
+    r2 r8 g e16( c') c8
+    d,16( h') h8 a8. a16 g4 r
+    \sbOn r8 \tuplet 3/2 8 { h16 a h c h c a g a } h4 r
+    r2 r8 \tuplet 3/2 8 { c16 h c d c d h a h } %20
+    c4 r \sbOff r8 \tuplet 3/2 8 { f16\p e f } d8 d,
+    r \tuplet 3/2 8 { e'16 d e } c8 c, r \tuplet 3/2 8 { d'16 c d } h8 h,-\critnote
+    R1
+    r2 r8 c'\f h16( d) d8
+    e,16( c') c8 h8. h16 a4 r %25
+    r2 \sbOn r8 \tuplet 3/2 8 { h16 a h d c d h a h } \sbOff
+    c4 r r2
+    r e,16( g) g8 fis8. fis16
+    e4 r r2
+    \sbOn r8 \tuplet 3/2 8 { h16 a h d c d h a h } c4 r %30
+    r2 r8 \tuplet 3/2 8 { e16 d e g f g } e8 \sbOff
+    R1
+    r2 r8 c' a16( f') f8
+    g,16( e') e8 d8. d16 c8 \tuplet 3/2 8 { e16 d e } d( f) f8
+    e e e e \sbOn \tuplet 3/2 8 { d16 c d h a h } \sbOff h,4 %35
+    r16 g' c d \sbOn \tuplet 3/2 8 { e d e c h c } \sbOff a16( f') f8 \sbOn \tuplet 3/2 8 { fis16 e fis d c d } \sbOff
+    h( g') g8 \sbOn \tuplet 3/2 8 { f16 e f d c d } \sbOff c( e) e8 d4\trill
+    c8 e e d c4 r\fermata \bar "||" %38 finis
+  }
+}

@@ -189,6 +189,92 @@ ChristeBassFigures = \figuremode {
   r2. %84 finis
 }
 
+GloriaOrgano = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoGloria
+    \mvTr c'8\fE-\tutti c, f f g g, c4
+    c'8 c, a' a, h' h, g' g,
+    a' a, d d g c, d d,
+    g^\critnote e' c d g,4 g
+    r g r g %5
+    c c8 c g' g,16 f' e8 c
+    f f d d e e c c
+    d d h h c4 c
+    g'8 g c c, g'4 g,
+    \sbOn c8 \tuplet 3/2 8 { c'16 h c d c d h a h c h c a g a f e f } g8 \sbOff %10
+    c,4 r8 \mvTr d\pE-\solo e c d g,
+    c4 r8 g' c,4 r8 c'
+    h g fis g a c, d16 c h a
+    g4 r8 d' g,4 r8 g
+    c'8. h16 a8 fis h8. a16 g8 e %15
+    a8. g16 fis8 d r fis g d
+    e16 c h a d8 d, \sbOn g \tuplet 3/2 8 { g'16\fE fis g a g a fis e fis }
+    \tuplet 3/2 8 { g fis g e d e c h c } d8 \sbOff g, g'16 a h8 c
+    h g r d g, g'16 a h8 a
+    gis e fis gis a a, r e' %20
+    a a, r a' \tuplet 3/2 8 { d16 c d } d,8 r g
+    \tuplet 3/2 8 { c16 h c } c,8 r a' \tuplet 3/2 8 { h16 a h } h,8 r e
+    a a, h h' c h a d,
+    e d e e, \sbOn a \tuplet 3/2 8 { a'16\fE gis a h a h gis fis gis }
+    \tuplet 3/2 8 { a gis a f e f d c d } e8 \sbOff a,4 r8 a'\pE %25
+    a,4 r8 f' e e, r e'
+    a a,16 h c8 a h4 e8 a,
+    h a h h' e,\fE \tuplet 3/2 8 { c'16 h c a g a } h8
+    e, e, r e'\pE a, a' d, dis
+    e e, r e' a, a16 h c8 cis %30
+    d4 g8 g, c4 r8 c
+    f16 e d c d8 d g g, a16 a' f8
+    g f g g, \sbOn c \tuplet 3/2 8 { c'16\fE h c d c d h a h }
+    \tuplet 3/2 8 { c h c a g a f e f } g8 \sbOff c,-\tutti e16 f g8 a16 h
+    c8 c, e c g'4 g,8 f' %35
+    e4 c8 e16 c f8 f, d' fis16 d
+    g4 g,16 g' h g \sbOn \tuplet 3/2 8 { c h c a g a f e f } g8 \sbOff
+    c, c'^\critnote g g, c c c4\fermata \bar "||" %38 finis
+  }
+}
+
+GloriaBassFigures = \figuremode {
+  r4. <6>8 \bo <[6 4]> \bc <[5 3]>4.
+  r2 <7 [5+]>8 <6>4.
+  <7>8 <6\\> <[7 _+]>4. <6 5>8 \bo <[6] 4> \bc <[5] _+>
+  r4 \bo <[6 5]>8 \bc <[_+ \l]> r2
+  r4 <[6] 4>2 <7 3>4 %5
+  r2 \bo <[6 4]>8 \bc <[5 3]> <6>4
+  r2 <9>
+  q q4 <8>
+  r2 \bo <[6] 4>4 \bc <[5] 3>
+  r4. \bo <[6 5]> \bc q4 %10
+  r2. <7>8 q
+  r4. <7>8 r2
+  r2. <_+>4
+  r4. <_+>8 r2
+  r1 %15
+  r
+  r4 <4>8 <_+> r4. <[6 5]>8
+  r4 \bo <[6 5]>8 <_+> r4 \bc <[6 \l]>
+  q4. <7 _+>8 r4 <[6]>
+  <6>4. \bassFigureExtendersOn q8 \bassFigureExtendersOff r4. <7 _+>8 %20
+  r2 <7 _!>8 <6>4 <7>8
+  <7> <6>4 <[7]>8 <7> <6\\>4 <7 _+>8
+  r4 <[6\\]> r8 <6\\>4 <6 5>8
+  \bo <[6] 4>4 \bc <[5] _+> r4. <[6 5]>8
+  r4 <[6 5]>8 <_+> r2 %25
+  \bo <[6 4]>8 \bc <[5 3]>4 <6>8 \bo <[6] 4> \bc <[5] _+>4 <7 _+>8
+  r2 <7 [5+] _+>4. <6\\ 5>8
+  \bo <[6] 4>4 \bc <[5+] _+> r \bo <[6\\]>8 \bc <[5+] _+>
+  <_+>2. \bo <[8 6]>8 \bc <[7 _+]>
+  \bo <[6] 4> \bc <[5] _+>4 <7 _+>8 r4 <[6]>8 <6 5!> %30
+  <9> <8> <8> <7> \bo <[9 4]> \bc <[8 3]>4.
+  \bo <[9]>4 <5> \bc <[7]>2
+  \bo <[6] 4>4 \bc <[5] 3>2 r8 <[6 5]>
+  r4 <[6 5]>2.
+  r1 %35
+  \bo <[6]>2. \bc <[_+]>4
+  r \bo <[7 \l]>2 \bc <[6 5]>4
+  r \bo <[6] 4>8 \bc <[5] 3> r2 %38 finis
+}
+
 % Organo = {
 %   \relative c {
 %     \clef bass

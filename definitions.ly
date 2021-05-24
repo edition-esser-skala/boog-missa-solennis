@@ -680,6 +680,8 @@ tempoKyrie = \tempoMarkup "Adagio"
   tempoKyrieB = \tempoMarkup "Allegro"
 tempoChriste = \tempoMarkup "Andante"
 
+tempoGloria = \tempoMarkup "Allegro"
+
 
 markKyrieDC = {
   \once \override Score.RehearsalMark.self-alignment-X = #RIGHT

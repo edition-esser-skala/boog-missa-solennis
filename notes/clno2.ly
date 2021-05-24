@@ -25,3 +25,27 @@ KyrieClarinoII = {
     e \tuplet 3/2 8 { c16 d e } e c d g, c8 g16 g e4\fermata \bar "||" %32 finis
   }
 }
+
+GloriaClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoGloria
+    e'8\fE e f f e d e4
+    R1
+    r2 r8 e d8. d16
+    d4 r r d
+    r e r d %5
+    c8 e e e e16 d d8 r4
+    R1
+    r4 r8 d e4 e
+    d8 d e d16 c c4 g8. g16
+    e4 r r r8 g %10
+    e4 r r2
+    R1*22 %33
+    r2 e'4\fE d
+    c8 e e e d4 d %35
+    c, r8 c16 c c4 r
+    g' r8 d' e4 d8.\trill d16
+    e8 d16 c g8 g e e16 e c4\fermata \bar "||" %38 finis
+  }
+}

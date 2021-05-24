@@ -91,44 +91,113 @@
   %     \midi { \tempo 4 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     subtitle = "C H R I S T E"
+  %   }
+  %   % \tocSubsection "1.2" "Christe"
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \ChristeViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \ChristeViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \ChristeBassoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Basso \ChristeBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \ChristeOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \ChristeBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 60 }
+  %   }
+  % }
   \bookpart {
     \header {
-      subtitle = "C H R I S T E"
+      number = "2"
+      title = "G L O R I A"
     }
-    % \tocSubsection "1.2" "Christe"
+    % \tocSection "2" "Gloria"
     \score {
       <<
+        \new StaffGroup \with { \smallGroupDistance } <<
+          \new Staff <<
+            \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
+            \partCombine \GloriaClarinoI \GloriaClarinoII
+          >>
+        >>
+        \new Staff \with { \smallStaffDistance } {
+          \set Staff.instrumentName = "timp"
+          \GloriaTimpani
+        }
         \new StaffGroup <<
           \new GrandStaff <<
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \ChristeViolinoI
+              \GloriaViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \ChristeViolinoII
+              \GloriaViolinoII
             }
           >>
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \ChristeBassoNotes }
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \GloriaSopranoNotes }
           }
-          \new Lyrics \lyricsto Basso \ChristeBassoLyrics
+          \new Lyrics \lyricsto Soprano \GloriaSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \GloriaAltoNotes }
+          }
+          \new Lyrics \lyricsto Alto \GloriaAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \GloriaTenoreNotes }
+          }
+          \new Lyrics \lyricsto Tenore \GloriaTenoreLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \GloriaBassoNotes }
+          }
+          \new Lyrics \lyricsto Basso \GloriaBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \ChristeOrgano
+            \GloriaOrgano
           }
         >>
-        \new FiguredBass { \ChristeBassFigures }
+        \new FiguredBass { \GloriaBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 }
+      \midi { \tempo 4 = 80 }
     }
   }
 }

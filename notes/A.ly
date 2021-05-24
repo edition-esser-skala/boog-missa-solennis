@@ -85,6 +85,66 @@ KyrieAltoLyrics = \lyricmode {
   son.
 }
 
+GloriaAltoNotes = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoGloria
+    \mvTr g'8\fE^\tutti g16 g a8 a g4 g
+    g8 g16 g a8 a a g g g
+    g fis fis fis g g g([ fis)]
+    g4 r r d
+    r e r f %5
+    e g8 g g16 g g8 r4
+    a2 g
+    f4. f8 e4 e
+    d8 g g g g2
+    g4 r r2 %10
+    R1*14 %24
+    r2 r8 \mvTr e4\pE^\solo f16 e %25
+    f8 e a h16([ a)] a([ gis)] gis8 r4
+    a4. a8 a4 g8 a
+    g4( fis8.) e16 e4 r
+    r gis8 gis16 gis a8 gis16([ a)] h8 a
+    a16 gis gis8 r4 r8 a4 g8 %30
+    f e16 f g8 f f e g4~
+    g8[ f16 e] f4~ f8[ g16 f] e8 a16([ f)]
+    e4( d)\trill c r
+    r2 \mvTr g'8\fE^\tutti g16 g g8 g16 g
+    g8 g g g g4 g %35
+    r e8 e16 e f8 f fis fis16 fis
+    g4 f e8 a16 a a8([ g)]
+    g4 r r2\fermata \bar "||" %38 finis
+  }
+}
+
+GloriaAltoLyrics = \lyricmode {
+  Glo -- ri -- a in ex -- cel -- sis,
+  glo -- ri -- a in ex -- cel -- sis, in ex --
+  cel -- sis, in ex -- cel -- sis De --
+  o. Pax,
+  pax, pax, %5
+  pax, pax ho -- mi -- ni -- bus
+  bo -- nae
+  vo -- lun -- ta -- tis,
+  bo -- nae vo -- lun -- ta --
+  tis. %10
+
+  Do -- mi -- ne %25
+  De -- us, Rex coe -- le -- stis,
+  De -- us Pa -- ter o --
+  mni -- po -- tens,
+  Do -- mi -- ne Fi -- li u -- ni --
+  ge -- ni -- te, u -- ni -- %30
+  ge -- ni -- te, Je -- su Chri -- ste, Je --
+  _ _ su
+  Chri -- ste.
+  Do -- mi -- ne, Do -- mi -- ne
+  De -- us, A -- gnus De -- i, %35
+  Fi -- li -- us Pa -- tris, Fi -- li -- us
+  Pa -- tris, Fi -- li -- us Pa --
+  tris. %38 finis
+}
+
 % AltoNotes = {
 %   \relative c' {
 %     \clef treble

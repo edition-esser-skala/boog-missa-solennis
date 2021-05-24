@@ -25,3 +25,26 @@ KyrieTimpani = {
     c4 r8 g c g c4\fermata \bar "||" %32 finis
   }
 }
+
+GloriaTimpani = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoGloria
+    c4\fE r g c
+    R1*2
+    g4 r r g
+    r g r g %5
+    c8-\critnote c c8. c16 g4 r
+    R1
+    r4 r8 g c4 c
+    g c8 c g4. g8
+    c4 r r r8 g %10
+    c4 r r2
+    R1*22 %33
+    r2 r4 g8\fE g
+    c4 c8 c g4 g %35
+    R1
+    g4 r r r8 g
+    c4 g8 g c c16 c c4\fermata \bar "||" %38 finis
+  }
+}

@@ -124,6 +124,18 @@ ChristeBassoLyrics = \lyricmode {
   % Chri -- ste e -- lei -- son,
 }
 
+GloriaBassoNotes = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \autoBeamOff \tempoGloria
+    s1*38 \bar "||"
+  }
+}
+
+GloriaBassoLyrics = \lyricmode {
+
+}
+
 % BassoNotes = {
 %   \relative c {
 %     \clef bass

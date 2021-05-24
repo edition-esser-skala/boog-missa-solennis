@@ -93,6 +93,50 @@ ChristeViolinoI = {
   }
 }
 
+GloriaViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoGloria
+    \sbOn \tuplet 3/2 8 { c'16\fE d e e f g a g a a, f' d } c8 h c4
+    \tuplet 3/2 8 { e16 f g a h c c h c c, d e d e fis g a h h a h h, c d }
+    \tuplet 3/2 8 { c d e fis g a a g a a, h c h d g e d c } h8 a\trillE \sbOff
+    g16 g' g8\trillE a, fis' g, h' h h
+    r c c c r d d d %5
+    r e, c' c c16 h h8 \sbOn \tuplet 3/2 8 { c,16 d e e f g }
+    \tuplet 3/2 8 { a, h c d e f f e f f, g a g a h c d e e d e e, f g }
+    \tuplet 3/2 8 { f g a h c d d c d d, e f e f g g a h c d e e f g } \sbOff
+    h,8 g' e c' c4 h\trill
+    c8 e, f16( d') d8 e,16( c') c8 d, h' %10
+    c,4 r r2
+    \sbOn r8 \tuplet 3/2 8 { c'16 h c d c d h a h } c4 r
+    R1
+    r8 \tuplet 3/2 8 { g16 fis g a g a fis e fis } g4 r \sbOff
+    R1*2 %16
+    r2 r8 h, c16( a') a8
+    h,16( g') g8 a, fis' g4 r
+    \sbOn r8 \tuplet 3/2 8 { g16 fis g a g a fis e fis } g4 r
+    r2 r8 \tuplet 3/2 8 { a16 gis a h a h gis fis gis } %20
+    a4 r \sbOff r8 \tuplet 3/2 8 { d16\p c d } h8 h,
+    r \tuplet 3/2 8 { c'16 h c } a8 a, r \tuplet 3/2 8 { h'16 a h } gis8 gis,
+    R1
+    r2 r8 e'\f d16( h') h8
+    c,16( a') a8 h, gis' a,4 r %25
+    r2 \sbOn r8 \tuplet 3/2 8 { gis'16 fis gis h a h gis fis gis } \sbOff
+    a4 r r2
+    r g,16( e') e8 fis, dis'
+    e,4 r r2
+    \sbOn r8 \tuplet 3/2 8 { gis16 fis gis h a h gis fis gis } a8 a, r4 %30
+    r2 r8 \tuplet 3/2 8 { c'16 h c e d e } c8 \sbOff
+    R1
+    r2 r8 e f16( d') d8
+    e,16( c') c8 d, h' c, \tuplet 3/2 8 { c'16 h c } h( d) d8
+    c c c c \sbOn \tuplet 3/2 8 { h16 a h g fis g } \sbOff g,4 %35
+    r16 c e f \sbOn \tuplet 3/2 8 { g f g e d e } \sbOff c16( a') a8 \sbOn \tuplet 3/2 8 { a16 g a fis e fis } \sbOff
+    d( h') h8 \sbOn \tuplet 3/2 8 { d16 c d h a h } \sbOff \once \slurDashed e,( c') c8 d, h'
+    c, c' c h c4 r\fermata \bar "||" %38 finis
+  }
+}
+
 % ViolinoI = {
 %   \relative c' {
 %     \clef treble
