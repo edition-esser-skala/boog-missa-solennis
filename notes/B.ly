@@ -133,6 +133,20 @@ GloriaBassoNotes = {
 }
 
 GloriaBassoLyrics = \lyricmode {
+  % Lau -- da -- mus te, be -- ne -- di -- ci -- mus te,
+  % ad -- o -- ra -- mus te, glo -- ri -- fi -- ca -- mus te.
+}
+
+QuiTollisBassoNotes = {
+  \relative c {
+    \clef bass
+    \key a \minor \time 4/4 \autoBeamOff \tempoQuiTollis
+      \set Score.currentBarNumber = #39
+    s1*22 \bar "||" %60 finis
+  }
+}
+
+QuiTollisBassoLyrics = \lyricmode {
 
 }
 

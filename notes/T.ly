@@ -145,6 +145,51 @@ GloriaTenoreLyrics = \lyricmode {
   tris. %38 finis
 }
 
+QuiTollisTenoreNotes = {
+  \relative c' {
+    \clef "treble_8"
+    \key a \minor \time 4/4 \autoBeamOff \tempoQuiTollis
+      \set Score.currentBarNumber = #39
+    r4 \mvTr c\fE^\tutti h h8 h
+    c4 c8 c c4. c8 %40
+    c2 h4 r
+    h4. h8 h4 e
+    e4. e8 e4 e
+    e( dis) e r
+    R1*3 %47
+    h4 h8 h c8. c16 c4
+    es8 es es es d4 d
+    as8 as as as g4 g %50
+    g( fis) g r
+    R1*3
+    r4 a8 a b2 %55
+    a4 a8 a c!4( a)
+    h h8 e e4 e
+    e2 e4 r
+    R1
+    R\fermata \bar "||" %60 finis
+  }
+}
+
+QuiTollisTenoreLyrics = \lyricmode {
+  Qui tol -- lis pec -- %39
+  ca -- ta, pec -- ca -- ta %40
+  mun -- di:
+  Mi -- se -- re -- re,
+  mi -- se -- re -- re
+  no -- bis.
+
+  Su -- sci -- pe, su -- sci -- pe %48
+  de -- pre -- ca -- ti -- o -- nem,
+  de -- pre -- ca -- ti -- o -- nem %50
+  no -- stram.
+
+  Mi -- se -- re -- %55
+  re, mi -- se -- re --
+  re, mi -- se -- re -- re
+  no -- bis. %58 finis
+}
+
 % TenoreNotes = {
 %   \relative c' {
 %     \clef "treble_8"

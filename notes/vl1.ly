@@ -137,6 +137,35 @@ GloriaViolinoI = {
   }
 }
 
+QuiTollisViolinoI = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 4/4 \tempoQuiTollis
+      \set Score.currentBarNumber = #39
+    r8 a'16(\fE c) c( h) h( a) r8 gis16( h) h( a) a( gis)
+    r8 \once \slurDashed a16( c) c( h) h( a) r8 dis16( fis) fis( e) e( dis) %40
+    r8 e16( g) g( f) f( e) r8 h16( d) d( c) c( h)
+    r8 h16( d) d( c) c( h) r8 h16( d) d( c) c( h)
+    r8 c16( e) e( d) d( c) e e8 e e e16
+    e8 e dis dis e g,16(\p h) h( a) a( g)
+    c( h) h( a) fis'( e) e( dis) e8 g,\f fis fis %45
+    e \once \slurDashed gis16(\p h) h( a) a( gis) r8 a16( c) c( h) h( a)
+    r8 d16( f) d( h) h( a) r8 gis16(\f h) h( a) a( gis)
+    r8 gis16( h) h( a) a( gis) r8 a16( c) c( h) h( a)
+    r8 a16( c) c( b) b( a) r8 b16( d) d( c) c( b)
+    r8 d16( f) f( es) es( d) c c8 c16 b b8 b16 %50
+    b8 b a a g b16(\p d) d( c) c( b)
+    es( d) d( c) a'( g) g( fis) g8 b,\f a a
+    g b16(\p d) d( b) b( a) r8 b16( d) d( b) a( b)
+    r8 g16( b) b( a) a( g) r8 d'16( f!) f( e) e( d)
+    cis8 cis16(\f e) e( d) d( cis) r8 cis16( e) e( d) d( cis) %55
+    r8 d16( f) f( e) e( d) r8 dis16( fis?) fis( e) e( dis)
+    e8 e, e' d c16 c8 c c c16
+    h8 h h h a c16(\p e) e( d) d( c) f( e) e( d) h'( a) a( gis) a8 a,\f a gis
+    a4 r r2\fermata \bar "||" %60 finis
+  }
+}
+
 % ViolinoI = {
 %   \relative c' {
 %     \clef treble

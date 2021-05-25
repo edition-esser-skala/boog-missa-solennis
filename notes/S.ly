@@ -141,18 +141,58 @@ GloriaSopranoLyrics = \lyricmode {
   tris. %38 finis
 }
 
-% Lau -- da -- mus te, be -- ne -- di -- ci -- mus te,
-% ad -- o -- ra -- mus te, glo -- ri -- fi -- ca -- mus te.
-
-% Qui tol -- lis pec -- ca -- ta mun -- di:
-% Mi -- se -- re -- re no -- bis.
-% Qui tol -- lis pec -- ca -- ta mun -- di:
-% Su -- sci -- pe de -- pre -- ca -- ti -- o -- nem no -- stram.
-% Qui se -- des ad dex -- te -- ram Pa -- tris:
-% Mi -- se -- re -- re no -- bis.
 % Quo -- ni -- am tu so -- lus san -- ctus, tu so -- lus Do -- mi -- nus,
 % tu so -- lus al -- tis -- si -- mus, Je -- su Chri -- ste.
 % Cum San -- cto Spi -- ri -- tu in glo -- ri -- a De -- i Pa -- tris, a -- men.
+
+QuiTollisSopranoNotes = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 4/4 \autoBeamOff \tempoQuiTollis
+      \set Score.currentBarNumber = #39
+    r4 \mvTr a'\fE^\tutti gis gis8 gis
+    a4 a8 e' dis4. dis8 %40
+    e2 d4 r
+    d4. d8 d4 d
+    c4. c8 cis4 cis
+    h2 h4 r
+    r2 r4 r8 \mvTr h\pE^\solo %45
+    h4 e8 gis, a16([ gis)] a8 r a
+    f'4. a,8 a16([ gis)] gis8 r4
+    \mvTr gis8.\fE^\tutti gis16 gis4 a8. a16 a4
+    a8 a a a b4 b
+    d8 d d d c4 b %50
+    b( a) g r
+    R1*3
+    r4 cis8 cis cis2 %55
+    d4 d8 d dis2
+    e4 e8 d c4 c
+    h2 a4 r
+    R1
+    R1\fermata \bar "||" %60 finis
+  }
+}
+
+QuiTollisSopranoLyrics = \lyricmode {
+  Qui tol -- lis pec -- %39
+  ca -- ta, pec -- ca -- ta %40
+  mun -- di:
+  Mi -- se -- re -- re,
+  mi -- se -- re -- re
+  no -- bis.
+  Qui %45
+  tol -- lis pec -- ca -- ta, pec --
+  ca -- ta mun -- di:
+  Su -- sci -- pe, su -- sci -- pe
+  de -- pre -- ca -- ti -- o -- nem,
+  de -- pre -- ca -- ti -- o -- nem %50
+  no -- stram.
+
+  Mi -- se -- re -- %55
+  re, mi -- se -- re --
+  re, mi -- se -- re -- re
+  no -- bis. %58 finis
+}
 
 % SopranoNotes = {
 %   \relative c' {

@@ -136,3 +136,33 @@ GloriaViolinoII = {
     c8 e e d c4 r\fermata \bar "||" %38 finis
   }
 }
+
+QuiTollisViolinoII = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 4/4 \tempoQuiTollis
+      \set Score.currentBarNumber = #39
+    r8 c16(\fE e) e( d) d( c) r8 h16( d) d( c) c( h)
+    r8 c16( e) e( d) d( c) r8 fis16( a) a( g) g( fis) %40
+    r8 g16( e') e( d) d( c) r8 g16( h) h( a) a( g)
+    r8 g16( h) h( a) a( g) r8 gis16( h) h( a) a( gis)
+    r8 a16( c) c( h) h( a) g g8 g g g16
+    g8 g fis fis e e16(\p g) g( fis) fis( e)
+    a( g) g( fis) a( g) g( fis) g8 e\f e dis %45
+    e e16(\p gis) gis( fis) fis( e) r8 c16( e) e( d) d( c)
+    r8 h'16( d) f,( d) d( c) r8-\critnote e16(\f gis) gis( fis) fis( e)
+    r8 h16( d) d( c) c( h) r8 c16( e) e( d) d( c)
+    r8 fis16( a) a( g) g( fis) r8 g16( b) b( a) a( g)
+    r8 f16( as) as( g) g( f) es g8 g g g16 %50
+    g8 g fis fis g g16(\p b) b( a) a( g)
+    c( b) b( a) c( b) b( a) b8 g\f g fis
+    g g16(\p b) b( g) g( fis) r8 g16( b) b( g) fis( g)
+    r8 e!16( g) g( f) f( e) r8 f16( a) a( g) g( f)
+    e8 a16(\f cis) cis( h) h( a) r8 e16( g) g( f) f( e) %55
+    r8 f16( a) a( g) g( f) r8 a a16( g) g( fis)
+    gis8 gis gis h h16 h8 h16 a a8 a16
+    a8 a gis gis a a16(\p c) c( h) h( a)
+    d( c) c( h) d( c) c( h) c8 c,\f h h
+    a4 r r2\fermata \bar "||" %60 finis
+  }
+}
