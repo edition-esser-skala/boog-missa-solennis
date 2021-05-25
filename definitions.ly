@@ -682,6 +682,7 @@ tempoChriste = \tempoMarkup "Andante"
 
 tempoGloria = \tempoMarkup "Allegro"
 tempoQuiTollis = \tempoMarkup "Adagio"
+tempoQuoniam = \tempoMarkup "Tempo giusto"
 
 
 markKyrieDC = {

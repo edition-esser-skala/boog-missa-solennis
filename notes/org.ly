@@ -330,6 +330,186 @@ QuiTollisBassFigures = \figuremode {
   r1 %60 finis
 }
 
+QuoniamOrganoSolo = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoQuoniam
+      \set Score.currentBarNumber = #61
+    r8 g'' c,16 e g c a8 g c,32 d e f g a h c
+    d,16 c' h a g8 f f\trill e r4
+    r8 e e16[ fis32 g] a16 h32 c fis,16 d e fis \once \tieDashed g4~
+    g32 fis e d c h a g a'8.\trill g16 g4 r
+    r c,32 d e f g a h c \once \tieDashed a4~\trill a32 f e d cis d cis d %65
+    h'4\trill r r16 c, e g c4~
+    c32 c, d e f g a h c4~ c16 h32 a g16 f e8 d\trill
+    c4 << {
+      \tiny a8 g <e g> <e a> <d a'> <d g>
+      <e g>4 r8 <g c> <a d> <g c>4 q8
+      <f a>4 <f g> <e g>8
+    } \\ {
+      \tiny <d f>4 c8 c c h
+      c4 r8 e d e4 e8
+      d4 <h d> c8
+    } >> g''8 c,16 e g c %70
+    a8 g c,32 d e f g a h c d,16 c' h a g8 f
+    f\trillE e r8 << {
+      \tiny c d h c4
+      h a g <d g>
+    } \\ {
+      \tiny <e g>8 <d g>4 <e g>8 <d fis>
+      <d g>4 <c e>8 <a d> <h d>4 g8 h
+    } >>
+    r8 a'' a16 h c a fis4 r8 << {
+      \tiny <c a>8
+      <g h>4 d'8 h c4 d8 h %75
+      a4 a8 fis g4 g
+      g8 <e g> <h g'>[ <a fis'>] <h g'>
+    } \\ {
+      \tiny d8
+      d4 <d g> <e g>8 <d fis> <d g>4 %75
+      <c e> <c d> <h d> d8 e
+      d c d4 d8
+    } >> d'8 g,16 h d g
+    e8\trill d g,32 a h c d e fis g a16 fis e d c'32 h a g fis e d c
+    h16 a g8 << { \tiny <a c,>4 <g d> } \\ { \tiny e8 d h4 } >> r8 d'
+    e16[ fis32 g] a16 h32 c fis,4\trill g16 d c' a a4\trill %80
+    g << {
+      \tiny <a, c> <g h> a
+      g r8 <d g> <e g> <d g>4 q8
+      <d a'>4 <g c>8 <d a'> <d g>4. fis8
+      g4. <g c>8 <f a>4 h8 gis
+      a4 f8 e e4
+    } \\ {
+      \tiny e8 d d e <e g>[ <d fis>]
+      <h d>4 r8 g c g4 h8
+      a4 e'8 a, h4. c8
+      d c d e d4 <h e>
+      <c e> d8 <h d> c4
+    } >> r %85
+    r8 a''16 g f e d c \appoggiatura c8 h4 r8 h
+    c h16 c d8 h c8.(\trill h32 c) d8 c
+    c\trillE h r4 r16 c e f g4~
+    g8 f16 e f4~ f8 e16 d e4~
+    e8 d16 c d8 d d\trillE c r << {
+      \tiny <g b>8 %90
+      <f a>4 <g h> <e a> <g d'>
+      <g c> <a c>8 <g h> <g c> <g h> <e a> <d a'>
+      g2 g8
+    } \\ {
+      \tiny c,8 %90
+      c d d4 c d8 f
+      e4 f e8 d c a
+      <c e>4 <h d> <c e>8
+    } >> g''8 c,16 e g c
+    a8\trillE g c,32 d e f g a h c d,16 c' h a g8 f
+    f\trill e r4 r8 e e16 fis32 g a16[ h32 c] %95
+    fis,16 d e fis g4~ g32 fis e d c h a g a'8.\trill g16
+    g4 r r c,32 d e f g a h c
+    a4~ a32 f e d cis d cis d h'4 r
+    r16 c, e g c4~ c32 c, d e f g a h c4~
+    c16 h32 a g16 f e8 d\trill c4 << {
+      \tiny <f, d'>4 %100
+      <e c'> <a c>8 <g h> <g c>4
+    } \\ {
+      \tiny a8 g %100
+      g a d,4 e
+    } >> r4\fermata \bar "||" %101 finis
+  }
+}
+
+QuoniamOrgano = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoQuoniam
+      \set Score.currentBarNumber = #61
+    \mvTr c8.\fE-\soloE d16 e8 c f e16 d e8 c
+    f16 e d c h8 g c4 d8 h
+    c c'16 h c8 a d c h a
+    g g, c d g, g' a fis
+    g8. f16 e8 c f8. e16 d8 f %65
+    g4 h8 g c4 e,8 d
+    c d e d c a' g g,
+    c4 d8 h c a' f g
+    c,4 r8 e\pE f e16 d e8 c
+    d16 c h a g8 h c8.\fE d16 e8 c %70
+    f e16 d e8 c f16 e d c h8 g
+    c4 r8 c'\pE h g a d,
+    g4 a8 fis g g,16 a h8 g
+    a4 r8 a d d, r fis'
+    g a h g c a h g %75
+    a g fis d g8. a16 h8 c
+    h c, d d, g4\fE r8 h'
+    c h r g fis4 e8 fis
+    g4 a8 fis g g,16 a h8 g
+    c a d c h e d d, %80
+    g g' a fis g e c d
+    g,4 r8 h\pE c h16 a h8 g'
+    fis4 e8 fis g g, g' a
+    h a h c d16 c h a gis8 e
+    a, a' h gis a a, r a' %85
+    d d, r d g g, r g'
+    c, c' f, g c,4 r8 c
+    g'4 h8 g c4 c,8 e
+    f f, r d' e e, r c'
+    d d, r h' c c16 d e8 c %90
+    f d g g, a a' h g
+    c c, d g c, g' a f
+    g f g g, c8.\fE d16 e8 c
+    f e16 d e8 c f16 e d c h8 g
+    c4 d8 h c c'16 h c8 a %95
+    d c h a g g, c d
+    g, g' a fis g8. f16 e8 c
+    f8. e16 d8 f g4 h8 g
+    c4 e,8 d c d e d
+    c a' g g, c4 d8 h %100
+    c a' f g c,4 r\fermata \bar "||" %101 finis
+  }
+}
+
+QuoniamBassFigures = \figuremode {
+  r1 %61
+  r
+  r
+  r
+  r %65
+  r
+  r
+  r4. \bo <[6 5]> \bc q4
+  r4. <6>8 q q4.
+  r4 <7>8 <[6 5]> r2 %70
+  r1
+  r2 <[6]>4 <7>8 <7 _+>
+  r4. \bo <[6]> \bc q4
+  r2.. \bo <[6 5]>8
+  r4 <6>4. <6\\>8 <6>4 %75
+  r8 <\t> <6> <7 _+> r4 <6>
+  \bc <[6 \l]>4 \bo <[6] 4>8 \bc <[5] _+> r2
+  r1
+  r4. <[6 5]>8 r2
+  r1 %80
+  r4. \bo <[6 5]> <6 5>8 <_+>
+  r4. <6>4 <6>4.
+  q4 q8 q r4. <6\\>8
+  <6>4 q8 \bc <[5 \l]> r4 <6>8 <7 [_+]>
+  r4. <[6 5]>8 r2 %85
+  r1
+  r
+  r
+  r
+  r2.. <[7-]>8 %90
+  r2. \bo <[6]>8 \bc <[7]>
+  r4 <7>8 q r4. <[6]>8
+  \bo <[6] 4>4 \bc <[5] 3>2.
+  r1
+  r %95
+  r
+  r
+  r
+  r
+  r2.. \bo <[6 5]>8 %100
+  r4 \bc q2. %101 finis
+}
+
 % Organo = {
 %   \relative c {
 %     \clef bass

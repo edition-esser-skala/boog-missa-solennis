@@ -141,8 +141,6 @@ GloriaSopranoLyrics = \lyricmode {
   tris. %38 finis
 }
 
-% Quo -- ni -- am tu so -- lus san -- ctus, tu so -- lus Do -- mi -- nus,
-% tu so -- lus al -- tis -- si -- mus, Je -- su Chri -- ste.
 % Cum San -- cto Spi -- ri -- tu in glo -- ri -- a De -- i Pa -- tris, a -- men.
 
 QuiTollisSopranoNotes = {
@@ -192,6 +190,64 @@ QuiTollisSopranoLyrics = \lyricmode {
   re, mi -- se -- re --
   re, mi -- se -- re -- re
   no -- bis. %58 finis
+}
+
+QuoniamSopranoNotes = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoQuoniam
+      \set Score.currentBarNumber = #61
+    R1*8 %68
+    \mvTr c'8.\pE^\solo e16 g8 c, d16([ h)] c8 r c
+    f4. e16([ d)] e([ d)] c8 r4 %70
+    R1
+    r8 e d c d16([ g)] d([ h)] c8. c16
+    h4 r r8 d d e16 d
+    c8. h16 c4 r8 a d c
+    h8. c16 d4 e16[ c d e] d[ h c d] %75
+    c[ h c e] d[ c h a] h[ g h d] g8.[ fis32 e]
+    d8 e16([ c)] h8([ a)]\trill g4 r
+    R1*4 %81
+    g8. h16 d8 g e16([ c)] d8 r g,
+    a16([ h)] c([ d)] e8 d16([ c)] h([ a)] g8 h c
+    d8. c16 d8 e f4 e16([ d)] c([ h)]
+    c h a8 r4 r8 e' \appoggiatura d16 c8 h16([ a)] %85
+    f'([ e)] f8 r4 r8 d g f
+    e d16([ e)] f8 d e8.([\trill d32 e)] f8 e
+    e16 d d8 r4 r g,8 c
+    a4~ a16[ h32 c d16 e32 f] h,4~ h16[ c32 d e16 f32 g]
+    f4. f8 f e r16 g,[ a b] %90
+    a[\trill g a c] h[\trill a h d] c[\trill h c e] d[\trill c d f]
+    e[ c e g] f8.[ e32 d] e8 h c d
+    e4( d)\trill c r
+    R1*7 %100
+    R1\fermata \bar "||" %101
+  }
+}
+
+QuoniamSopranoLyrics = \lyricmode {
+  Quo -- ni -- am tu so -- lus, tu %69
+  so -- lus san -- ctus, %70
+
+  tu so -- lus, so -- lus Do -- mi --
+  nus, tu so -- lus al --
+  tis -- si -- mus, so -- lus al --
+  tis -- si -- mus, Je -- _ %75
+  _ _ _ _
+  _ su Chri -- ste.
+
+  Quo -- ni -- am tu so -- lus, tu %82
+  so -- lus, so -- lus san -- ctus, so -- lus
+  Do -- mi -- nus, tu so -- lus al --
+  tis -- si -- mus, tu so -- lus %85
+  san -- ctus, tu so -- lus
+  Do -- mi -- nus, tu so -- lus al --
+  tis -- si -- mus, Je -- su,
+  Je -- _
+  _ su Chri -- ste, Je -- %90
+  _ _ _ _
+  _ _ _ su, Je -- su
+  Chri -- ste. %93 finis
 }
 
 % SopranoNotes = {

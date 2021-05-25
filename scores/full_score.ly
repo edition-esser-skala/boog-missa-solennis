@@ -200,11 +200,69 @@
   %     \midi { \tempo 4 = 80 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     subtitle = "Q U I   T O L L I S"
+  %   }
+  %   \tocSubsection "2.2" "Qui tollis"
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \QuiTollisViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \QuiTollisViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \QuiTollisSopranoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \QuiTollisSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \QuiTollisAltoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Alto \QuiTollisAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \QuiTollisTenoreNotes }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \QuiTollisTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \QuiTollisBassoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Basso \QuiTollisBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \QuiTollisOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \QuiTollisBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 60 }
+  %   }
+  % }
   \bookpart {
     \header {
-      subtitle = "Q U I   T O L L I S"
+      subtitle = "Q U O N I A M"
     }
-    \tocSubsection "2.2" "Qui tollis"
+    \tocSubsection "2.3" "Quoniam"
     \score {
       <<
         \new StaffGroup <<
@@ -212,50 +270,34 @@
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \QuiTollisViolinoI
+              \QuoniamViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \QuiTollisViolinoII
+              \QuoniamViolinoII
             }
           >>
         >>
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \QuiTollisSopranoNotes }
+            \new Voice = "Soprano" { \dynamicUp \QuoniamSopranoNotes }
           }
-          \new Lyrics \lyricsto Soprano \QuiTollisSopranoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \QuiTollisAltoNotes }
-          }
-          \new Lyrics \lyricsto Alto \QuiTollisAltoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \QuiTollisTenoreNotes }
-          }
-          \new Lyrics \lyricsto Tenore \QuiTollisTenoreLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \QuiTollisBassoNotes }
-          }
-          \new Lyrics \lyricsto Basso \QuiTollisBassoLyrics
+          \new Lyrics \lyricsto Soprano \QuoniamSopranoLyrics
         >>
-        \new StaffGroup <<
+        \new PianoStaff <<
+          \set PianoStaff.instrumentName = \markup \center-column { "org" "solo" }
+          \new Staff { \QuoniamOrganoSolo }
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "org" "b" }
+            \set Staff.instrumentName = "b"
             % \transpose c c,
-            \QuiTollisOrgano
+            \QuoniamOrgano
           }
         >>
-        \new FiguredBass { \QuiTollisBassFigures }
+        \new FiguredBass { \QuoniamBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 }
+      \midi { \tempo 4 = 80 }
     }
   }
 }

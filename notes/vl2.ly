@@ -166,3 +166,39 @@ QuiTollisViolinoII = {
     a4 r r2\fermata \bar "||" %60 finis
   }
 }
+
+QuoniamViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoQuoniam
+      \set Score.currentBarNumber = #61
+    R1 %61
+    r2 r16 c'\f e g \sbOn \tuplet 3/2 8 { f e f } g, f' \sbOff
+    \tuplet 3/2 8 { e h c } c,8 r4 r2
+    r r16 g' h d \sbOn \tuplet 3/2 8 { c h c } d, c' \sbOff
+    \tuplet 3/2 8 { h fis g } g,8 r4 r16 a' d e f4 %65
+    r16 g, h d g,32( a h c d e f g) e8 c, r4
+    R1
+    r16 c' e g \sbOn \tuplet 3/2 8 { f e f } g, f' \sbOff e32 d c h c16[ e,] d8 h'
+    c,4 r r2
+    R1*3 %72
+    r16 g' h d \sbOn \tuplet 3/2 8 { c h c } d, c' \sbOff h8 g, r4
+    R1*5 %78
+    r16 g' h d \sbOn \tuplet 3/2 8 { c h c } d, c' \sbOff \tuplet 3/2 8 { h fis g } g,8 r4
+    R1 %80
+    r16 g' h d \sbOn \tuplet 3/2 8 { c h c } d, c' \sbOff h32[ a g fis] g16 h, a8 fis'
+    g,4 r r2
+    R1*2
+    r16 a' c e \sbOn \tuplet 3/2 8 { d c d } d, d' \sbOff \tuplet 3/2 8 { c gis a } a,8 r4 %85
+    R1*2
+    r16 g' h d g,32( a h c d e f g) e8 c, r4
+    R1*6 %94
+    r16 c' e g \sbOn \tuplet 3/2 8 { f e f } g, f' \sbOff \tuplet 3/2 8 { e h c } c,8 r4 %95
+    R1
+    r16 g' h d \sbOn \tuplet 3/2 8 { c h c } d, c' \sbOff \tuplet 3/2 8 { h fis g } g,8 r4
+    r2 r16 g' h d g,32( a h c d e f g)
+    e8 c, r4 r2
+    r r16 c' e g \sbOn \tuplet 3/2 8 { f e f } g, f' \sbOff %100
+    e32[ d c h] c16 e, d8 h' c,4 r\fermata \bar "||" %101 finis
+  }
+}
