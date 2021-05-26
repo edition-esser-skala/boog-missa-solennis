@@ -202,3 +202,52 @@ QuoniamViolinoII = {
     e32[ d c h] c16 e, d8 h' c,4 r\fermata \bar "||" %101 finis
   }
 }
+
+CumSanctoViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoCumSancto
+      \set Score.currentBarNumber = #102
+    r2 r4 c'\fE
+    c h a4. a8
+    h4 c a h
+    c a h c %105
+    c d2 \once \tieDashed e4~ \noBreak
+    e d8 c d2\fermata \bar "||"
+    \tempoCumSanctoFuga R1*6 %113
+    r4 g, a4. g16 a
+    f8 d e f g4. f16 g %115
+    e8 c d e f e d4
+    c r r8 e16 fis g8 fis16 g
+    a4. g8 fis d16 e fis8 e16 fis
+    g4. f8 e16 fis g4 fis8
+    g d g f e4 e %120
+    f f8 e d4 d
+    e4. d8 c4 f
+    e2 e4 r
+    r a g2
+    g4 g f8 a4 g16 a %125
+    f8 f16 g a4 d,8 gis?16 a h4
+    e, r r a
+    h4. a16 h gis8 a h4~
+    h a \once \tieDashed f2~
+    f4 e e8 a4 g!8 %130
+    f4 f g4. f8
+    e2 r4 g
+    a4. g16 a f8 d e f
+    g4. f8 e4 e
+    f4. e8 d4 d %135
+    e8 f g4 f8 g a a
+    g2 g
+    a4. g8 f4 g8 f'
+    e f e8. e16 d4 g,
+    a4. g16 a f8 d e f %140
+    g4. f16 g e4 fis
+    g8 f e c' c4 h
+    e,8 c'4 h8 a a16 h c8^\critnote h16 c
+    d8 d4 c8 h g'4 f8
+    e e4 c8 a f' f f %145
+    e e d4 e d
+    c r r2\fermata \bar "|." %147 finis
+  }
+}

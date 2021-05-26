@@ -258,46 +258,114 @@
   %     \midi { \tempo 4 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \header {
+  %     subtitle = "Q U O N I A M"
+  %   }
+  %   \tocSubsection "2.3" "Quoniam"
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \QuoniamViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \QuoniamViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \QuoniamSopranoNotes }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \QuoniamSopranoLyrics
+  %       >>
+  %       \new PianoStaff <<
+  %         \set PianoStaff.instrumentName = \markup \center-column { "org" "solo" }
+  %         \new Staff { \QuoniamOrganoSolo }
+  %         \new Staff {
+  %           \set Staff.instrumentName = "b"
+  %           % \transpose c c,
+  %           \QuoniamOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \QuoniamBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 80 }
+  %   }
+  % }
   \bookpart {
     \header {
-      subtitle = "Q U O N I A M"
+      subtitle = "C U M   S A N C T O   S P I R I T U"
     }
-    \tocSubsection "2.3" "Quoniam"
+    \tocSubsection "2.4" "Cum Sancto Spiritu"
     \score {
       <<
+        \new StaffGroup \with { \smallGroupDistance } <<
+          \new Staff <<
+            \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
+            \partCombine \CumSanctoClarinoI \CumSanctoClarinoII
+          >>
+        >>
+        \new Staff \with { \smallStaffDistance } {
+          \set Staff.instrumentName = "timp"
+          \CumSanctoTimpani
+        }
         \new StaffGroup <<
           \new GrandStaff <<
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \QuoniamViolinoI
+              \CumSanctoViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \QuoniamViolinoII
+              \CumSanctoViolinoII
             }
           >>
         >>
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \QuoniamSopranoNotes }
+            \new Voice = "Soprano" { \dynamicUp \CumSanctoSopranoNotes }
           }
-          \new Lyrics \lyricsto Soprano \QuoniamSopranoLyrics
-        >>
-        \new PianoStaff <<
-          \set PianoStaff.instrumentName = \markup \center-column { "org" "solo" }
-          \new Staff { \QuoniamOrganoSolo }
+          \new Lyrics \lyricsto Soprano \CumSanctoSopranoLyrics
+
           \new Staff {
-            \set Staff.instrumentName = "b"
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \CumSanctoAltoNotes }
+          }
+          \new Lyrics \lyricsto Alto \CumSanctoAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \CumSanctoTenoreNotes }
+          }
+          \new Lyrics \lyricsto Tenore \CumSanctoTenoreLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \CumSanctoBassoNotes }
+          }
+          \new Lyrics \lyricsto Basso \CumSanctoBassoLyrics
+        >>
+        \new StaffGroup <<
+          \new Staff {
+            \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \QuoniamOrgano
+            \CumSanctoOrgano
           }
         >>
-        \new FiguredBass { \QuoniamBassFigures }
+        \new FiguredBass { \CumSanctoBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 80 }
+      \midi { \tempo 4 = 60 }
     }
   }
 }

@@ -194,6 +194,99 @@ QuiTollisAltoLyrics = \lyricmode {
   no -- bis. %58 finis
 }
 
+CumSanctoAltoNotes = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoCumSancto
+      \set Score.currentBarNumber = #102
+    r2 r4 \mvTr g'\fE^\tutti
+    g g a4. a8
+    g4 g a g8 f!
+    e8.([ a16)] a4 d,8.([ g16)] g4 %105
+    a a g g \noBreak
+    g2 g\fermata \bar "||"
+    \tempoCumSanctoFuga R1*6 %113
+    r4 g a4. g16 a
+    f8([ d)] e f g4. f16 g %115
+    e8 c d e f e d4
+    c r r8 e16([ fis] g8[ fis16 g]
+    a4. g8) fis d16([ e] fis8[ e16 fis]
+    g4.) f8 e16([ fis] g4 fis8)
+    g d([ g f]) e4 e %120
+    f f8 e d4 d
+    e4. d8 c4 f
+    e2 e4 r
+    r a( g2)
+    g4 g( f8 a4 g16[ a)] %125
+    f8 f16([ g] a4) d,8 gis?16([ a] h4)
+    e, r r a
+    h4. a16 h gis8 a h4~
+    h a f2~
+    f4 e e8( a4 g!8) %130
+    f4 f( g4. f8)
+    e2 r4 g
+    a4. g16 a f8 d e f
+    g4.( f8 e4) e
+    f4.( e8 d4) d %135
+    e8([ f] g4 f8[ g]) a4
+    g2 g
+    a4.( g8 f4) g
+    g2 g4 g
+    a4. g16 a f8 d e f %140
+    g4.( f16[ g] e4) fis
+    g8([ f)] e4 d2
+    c8 e16([ f] g8[ f16 g] c,4) c
+    r8 f16([ g] a8[ g16 a]) d,4 g
+    g a8 a a4 g %145
+    g8 g g4 g g
+    g r r2\fermata \bar "|." %147 finis
+  }
+}
+
+CumSanctoAltoLyrics = \lyricmode {
+  Cum %102
+  San -- cto Spi -- ri --
+  tu in glo -- ri -- a
+  De -- i Pa -- tris,
+  De -- i Pa -- tris,
+  a -- men.
+
+  In glo -- ri -- a %114
+  De -- i, in glo -- ri -- a %115
+  De -- i Pa -- tris, a -- men, a --
+  men, a --
+  men, a --
+  men, a --
+  men, a -- men, in %120
+  glo -- ri -- a De -- i
+  Pa -- tris, a -- men,
+  a -- men,
+  a --
+  men, a -- %125
+  men, a -- men, a --
+  men, in
+  glo -- ri -- a De -- i Pa --
+  tris, a --
+  men, a -- %130
+  men, a --
+  men, in
+  glo -- ri -- a De -- i Pa -- tris,
+  a -- men,
+  a -- men, %135
+  a -- men,
+  a -- men,
+  a -- men,
+  a -- men, in
+  glo -- ri -- a De -- i Pa -- tris, %140
+  a -- men,
+  a -- men, a --
+  men, a -- men,
+  a -- men, in
+  glo -- ri -- a De -- i %145
+  Pa -- tris, a -- men, a --
+  men. %147 finis
+}
+
 % AltoNotes = {
 %   \relative c' {
 %     \clef treble

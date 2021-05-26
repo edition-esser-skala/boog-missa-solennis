@@ -202,6 +202,52 @@ QuoniamViolinoI = {
   }
 }
 
+CumSanctoViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoCumSancto
+      \set Score.currentBarNumber = #102
+    r4 g'\fE c e
+    d g c, f
+    d e a g8 f!
+    e4 f2 e4 %105
+    a a h c~ \noBreak
+    c h8 a h2\fermata \bar "||"
+    \tempoCumSanctoFuga R1*9 %116
+    r4 c, e4. d16 e
+    c8 a h c d4. c16 d
+    h8 g a h c h a4
+    g r r8 a16 h c8 h16 c %120
+    d4. c8 h g16 a h8 a16 h
+    c4. h8 a h16 c d c h a
+    gis4. gis8 a4 c
+    d4. c16 d h8 g a h
+    c4. h16 c a4 r %125
+    R1
+    r4 e' f4. e16 f
+    d8 h c d e4. d8
+    c4 c d4. c8
+    h4 h c8. d16 e4~ %130
+    e d d d
+    d c r2
+    R1
+    r2 r4 c
+    d4. c16 d h8 g a h %135
+    c d e4 f4. e16 f
+    d8 g4 f8 e4. d16 e
+    c8 c d e f e16 f d8 d'
+    c d c8. c16 h4 r
+    r e, f4. e8 %140
+    d4 d c a
+    h c2 h4
+    c8 g' g g a, a' a a
+    f a a a h, g'4 f8
+    e16 c e g c8 a f d' d d %145
+    c c c h c4 h
+    c r r2\fermata \bar "|." %174 finis
+  }
+}
+
 % ViolinoI = {
 %   \relative c' {
 %     \clef treble

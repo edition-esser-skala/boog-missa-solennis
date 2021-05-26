@@ -141,8 +141,6 @@ GloriaSopranoLyrics = \lyricmode {
   tris. %38 finis
 }
 
-% Cum San -- cto Spi -- ri -- tu in glo -- ri -- a De -- i Pa -- tris, a -- men.
-
 QuiTollisSopranoNotes = {
   \relative c' {
     \clef treble
@@ -248,6 +246,102 @@ QuoniamSopranoLyrics = \lyricmode {
   _ _ _ _
   _ _ _ su, Je -- su
   Chri -- ste. %93 finis
+}
+
+CumSanctoSopranoNotes = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoCumSancto
+      \set Score.currentBarNumber = #102
+    r4 \mvTr g'\fE^\tutti c c
+    c h a d
+    d( c2) h8 h
+    c4 f f e %105
+    e d d e \noBreak
+    e( d8[ c)] d2\fermata \bar "||"
+    \tempoCumSanctoFuga R1*9 %116
+    r4 c e4. d16 e
+    c8([ a)] h c d4. c16 d
+    h8 g a h c h a4
+    g r r8 a16([ h] c8[ h16 c] %120
+    d4. c8) h g16([ a] h8[ a16 h]
+    c4.) h8 a([ h16 c] d[ c h a]
+    gis2) a4 c
+    d4. c16 d h8 g a h
+    c4.( h16[ c]) a4 r %125
+    R1
+    r4 e' f4. e16 f
+    d8 h c d e4.( d8)
+    c4 c( d4. c8)
+    h4 h c8. d16 e4 %130
+    e d d8([ h16 c)] d4
+    d c r2
+    R1
+    r2 r4 c
+    d4. c16 d h8 g a h %135
+    c([ d)] e4 f4. e16[ f]
+    d8 g4 f8 e4. d16[ e]
+    c8 c[ d e] f[ e16 f] d8[ c16 d]
+    e8 f e4 d r
+    r e( f4. e8) %140
+    d4 d( c) a
+    h c c( h)
+    c8 c4( h8) a a16([ h] c8[ h16 c]
+    d4. c8) h g'4( f8
+    e4) e f2( %145
+    e8) e d4 e d
+    c r r2\fermata \bar "|." %147 finis
+  }
+}
+
+CumSanctoSopranoLyrics = \lyricmode {
+  Cum San -- cto %102
+  Spi -- ri -- tu in
+  glo -- ri -- a
+  De -- i Pa -- tris,
+  De -- i Pa -- tris,
+  a -- men.
+
+  In glo -- ri -- a %117
+  De -- i, in glo -- ri -- a
+  De -- i Pa -- tris, a -- men, a --
+  men, a -- %120
+  men, a --
+  men, a --
+  men, in
+  glo -- ri -- a De -- i Pa -- tris,
+  a -- men, %125
+
+  in glo -- ri -- a
+  De -- i Pa -- tris, a --
+  men, a --
+  men, in glo -- ri -- a %130
+  De -- i Pa -- tris,
+  a -- men,
+
+  in
+  glo -- ri -- a De -- i Pa -- tris, %135
+  a -- men, a -- _
+  _ _ _ _ _
+  men, a -- _ _
+  _ men, a -- men,
+  a -- %140
+  men, a -- men,
+  a -- men, a --
+  men, a -- men, a --
+  men, a --
+  men, a -- %145
+  men, a -- men, a --
+  men. %147 finis
+  % In glo -- ri -- a De -- i Pa -- tris, a -- men,
+  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
+  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
+  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
+  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
+  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
+  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
+  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
+  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
 }
 
 % SopranoNotes = {
