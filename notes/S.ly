@@ -408,14 +408,6 @@ CredoSopranoLyrics = \lyricmode {
 %
 % }
 
-
-
-% Et in -- car -- na -- tus est de Spi -- ri -- tu San -- cto
-% ex Ma -- ri -- a Vir -- gi -- ne, et ho -- mo fa -- ctus est.
-%
-% Cru -- ci -- fi -- xus e -- ti -- am pro no -- bis
-% sub Pon -- ti -- o Pi -- la -- to, pas -- sus et se -- pul -- tus est.
-%
 % Et re -- sur -- re -- xit ter -- ti -- a di -- e
 % se -- cun -- dum Scri -- ptu -- ras,
 % et a -- scen -- dit in coe -- lum,

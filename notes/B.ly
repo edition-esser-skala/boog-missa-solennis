@@ -261,6 +261,88 @@ CredoBassoLyrics = \lyricmode {
   lis. %24 finis
 }
 
+EtIncarnatusBassoANotes = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \autoBeamOff \tempoEtIncarnatus
+      \set Score.currentBarNumber = #27
+    R1*31 %57
+    r2 r4 \mvTr g'8\pE^\solo c
+    c4 h as4. as8
+    as4 g c8. c16 d8. c16 %60
+    h([ a)] g8 r g as8. as16 as8 as
+    g16([ f)] es8 r4 c'8 c, d([ b'16 as)]
+    g4 g8 f g4( f8.) f16
+    es4 r8 g as8. as16 h8 h
+    c c, r c' h d g, h %65
+    c c, r c' as c f, as
+    b4( as) g r
+    c2 b
+    as4. as8 as4 g
+    c c h c %70
+    c( h8.) h16 c4 r
+    R1
+    R\fermata \bar "||" %73 finis
+  }
+}
+
+EtIncarnatusBassoALyrics = \lyricmode {
+  Cru -- ci -- %58
+  fi -- xus, cru -- ci --
+  fi -- xus e -- ti -- am pro %60
+  no -- bis, sub Pon -- ti -- o Pi --
+  la -- to pas -- sus, pas --
+  sus et se -- pul -- tus
+  est, sub Pon -- ti -- o Pi --
+  la -- to, sub Pon -- ti -- o Pi -- %65
+  la -- to, sub Pon -- ti -- o Pi --
+  la -- to
+  pas -- sus
+  et se -- pul -- tus,
+  pas -- sus et se -- %70
+  pul -- tus est. %71 finis
+}
+
+EtIncarnatusBassoBNotes = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \autoBeamOff \tempoEtIncarnatus
+      \set Score.currentBarNumber = #27
+    R1*32 %58
+    r4 \mvTr d8\pE^\solo g g4 f
+    f8. f16 es4 es8. es16 f8. es16 %60
+    d8 d r g g f16([ es)] f8 f
+    es es b' b, c as' as g16([ f)]
+    es4 es8 es es4( d8.) d16
+    es4 r r r8 d
+    es8. es16 fis8 fis g g, r g' %65
+    e g c, e f f, r f'
+    d f b, d es es, b''4~
+    b as as g
+    g f f es
+    es f8([ es)] d4 es %70
+    d4. d8 c4 r
+    R1
+    R\fermata \bar "||" %73 finis
+  }
+}
+
+EtIncarnatusBassoBLyrics = \lyricmode {
+  Cru -- ci -- fi -- xus %59
+  e -- ti -- am, e -- ti -- am pro %60
+  no -- bis, sub Pon -- ti -- o Pi --
+  la -- to pas -- sus, pas -- sus et se --
+  pul -- tus, se -- pul -- tus
+  est sub
+  Pon -- ti -- o Pi -- la -- to, sub %65
+  Pon -- ti -- o Pi -- la -- to, sub
+  Pon -- ti -- o Pi -- la -- to pas --
+  sus, pas -- sus
+  et se -- pul -- tus,
+  pas -- sus et se -- %70
+  pul -- tus est. %71 finis
+}
+
 % BassoNotes = {
 %   \relative c {
 %     \clef bass

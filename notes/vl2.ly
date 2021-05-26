@@ -284,3 +284,28 @@ CredoViolinoII = {
     c,4 r r2\fermata \bar "||" %26 finis
   }
 }
+
+EtIncarnatusViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoEtIncarnatus
+      \set Score.currentBarNumber = #27
+    R1*31 %57
+    r2 es8\pp r es r
+    d r d r es r f r
+    d r es r c r f r %60
+    d r b! r es r f r
+    g r g r es r d r
+    es r c r b r b r
+    b r es r d r d r
+    es r as r d, r d r %65
+    g, r g r as r c r
+    d r f r g r es r
+    es r d r es r g r
+    es r f r b, r g' r
+    as r as r d, r g r %70
+    g r g r e4 r16 g \slurDashed e( g)
+    c,4 r16 a'! fis( a) d,-\parenthesize-! f d( f) \slurSolid es8 c
+    c c h h c2\fermata \bar "||"
+  }
+}

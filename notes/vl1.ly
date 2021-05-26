@@ -281,6 +281,31 @@ CredoViolinoI = {
   }
 }
 
+EtIncarnatusViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoEtIncarnatus
+      \set Score.currentBarNumber = #27
+    R1*31 %57
+    r2 c16-!\pp g' es( g) g,-! g' es( g)
+    d-! g d( g) g,-! g' d( g) c,-! as' es( as) d,-! as' f( as)
+    d,-! d' h( d) es,-! g g,( g') as-! c c,( c') f,-! as d,( c') %60
+    g,-! g' d( g) g,-! g' es( g) c,-! as' f( as) b,-! as' d,( as')
+    b,-! g' es( g) b,-! b' g( b) c,-! as' f( as) d,-! as' b,( as')
+    b,-! g' es( g) g,-! es' c( es) b-! g' es( g) b,-! f' d( f)
+    g,-! g' es( g) g,-! g' es( c') c,-! as' f( as) d,-! d' h( d)
+    es,-! g es( g) c,-! c' fis,( c') h?-! d h( d) d,-! d' h( d) %65
+    e,-! c' g( c) e,-! c' g( c) c,-! as' f( as) c,-! as' f( as)
+    b,-! f' d( f) b,-! as' b,( as') b,-! g' es( g) b,-! b' g( b)
+    c,-! c' as( c) c,-! as' f( as) b,-! b' g( b) b,-! g' es( g)
+    c,! as' g( as) b,-! as' b,( as') b,-! es f( es) b-! g' es( g)
+    c,-! as' g( as) d,-! as' g( as) g-! h d,( h') es,-! c' g( c) %70
+    d,-! c' h( c) d,-! c' d,( h') c,-! g' e( g) c,-! b' g( b)
+    as-! as f( as) d,-! c' a( c) h-! d h( d) c8 es,
+    d d d d c2\fermata \bar "||"
+  }
+}
+
 % ViolinoI = {
 %   \relative c' {
 %     \clef treble

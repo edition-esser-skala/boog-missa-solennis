@@ -347,6 +347,48 @@ CredoAltoLyrics = \lyricmode {
   lis. %24 finis
 }
 
+EtIncarnatusAltoNotes = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoEtIncarnatus
+      \set Score.currentBarNumber = #27
+    R1*8 %34
+    r8 \mvTr g'\pE^\solo c, as' as16 g g8 r g %35
+    f8.([ g32 as)] g16([ f)] es([ d)] es([ d)] c8 g' g
+    as4. g16([ f)] g f es8 r f
+    g16([ as as8)]\trill b f g16([ as as8)]\trill b d,
+    es as16([ f)] es8([ d16)] es es4 r
+    R1*3 %42
+    r2 r8 b' es, g
+    g16 f f8 r f16([ g)] as4. b16 as
+    as8\trill g g as16([ b)] \appoggiatura f8 e4 f8([ g)] %45
+    as16 g f8 f g16[( as)] \appoggiatura es8 d4 es8([ f)]
+    g16 f es8 r g as8. g16 f([ es)] d([ es)]
+    \appoggiatura es8 d4 r8 d es16([ f f8)]\trill g d
+    es16([ f f8)]\trill g as g4. as16([ f)]
+    es4( d8.)\trill c16 c4 r %50
+    R1*22 %72
+    R1\fermata \bar "||" %73 finis
+  }
+}
+
+EtIncarnatusAltoLyrics = \lyricmode {
+  Et in -- car -- na -- tus est de %35
+  Spi -- ri -- tu San -- cto ex Ma --
+  ri -- a Vir -- gi -- ne, et
+  ho -- mo, et ho -- mo, et
+  ho -- mo fa -- ctus est.
+
+  Et in -- car -- %43
+  na -- tus est de Spi -- ri -- tu
+  San -- cto ex Ma -- ri -- a __ %45
+  Vir -- gi -- ne, ex Ma -- ri -- a __
+  Vir -- gi -- ne, et ho -- mo fa -- ctus
+  est, et ho -- mo, et
+  ho -- mo, et ho -- mo
+  fa -- ctus est. %50 finis
+}
+
 % AltoNotes = {
 %   \relative c' {
 %     \clef treble
