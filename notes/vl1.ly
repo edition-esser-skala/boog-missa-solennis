@@ -248,6 +248,39 @@ CumSanctoViolinoI = {
   }
 }
 
+CredoViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoCredo
+    c''8\fE \tuplet 3/2 8 { e,16 f g } c,8 c' h4 r
+    a8 \tuplet 3/2 8 { c,16 d e } a,8 a' d,4 r
+    g8 \tuplet 3/2 8 { h,16 c d } g,8 g' e4 r
+    a8 \tuplet 3/2 8 { c,16 d e } a,8 c d \tuplet 3/2 8 { fis16 g a } g8 g
+    g g fis fis g \tuplet 3/2 8 { h,16 c d } g,8 g' %5
+    gis4 r a8 \tuplet 3/2 8 { c,16 d e } a,8 a'
+    f4 r c'8 \tuplet 3/2 8 { e,16 f g } c,8 c'
+    a4 r d,8 \tuplet 3/2 8 { h16 c d } d,8 d'
+    e4 r a8 \tuplet 3/2 8 { c,16 d e } a,8 a'
+    f4 r h8 \tuplet 3/2 8 { gis16 a h } e,8 h'16 d, %10
+    c8 a' a gis a \tuplet 3/2 8 { c,16 d e } a,8 e'
+    f4 r g8 \tuplet 3/2 8 { b,16 c d } g,8 g'
+    e4 r f8 \tuplet 3/2 8 { a,16 b c } f,8 f'
+    f8. e16 e4 r2
+    d8 \tuplet 3/2 8 { b16 c d } g,8 g' e4 r %15
+    f8 \tuplet 3/2 8 { a,16 b c } a8 \tuplet 3/2 8 { f'16 g a } f8 f e e
+    f \tuplet 3/2 8 { a,16 b c } f,8 f' d4 r
+    g8 \tuplet 3/2 8 { e16 f g } c,8 g' a4 r
+    g8 \tuplet 3/2 8 { e16 f g } c,8 c' h4 r8 c
+    c h g,,[ d''] e8. d16 c8 a'16 c, %20
+    d8. c16 h8 g'16 h, c8 g' e16 g c,8
+    r d h16 d g,8 c' \tuplet 3/2 8 { e,16 f g } c,8 c'
+    h4 c8 c c c h h
+    c \tuplet 3/2 8 { e,16 f g } c,8 c' h4 r8 h
+    c \tuplet 3/2 8 { e,16 f g } f8 \tuplet 3/2 8 { d16 e f } e8 c' d,, h'' %25
+    c,4 r r2\fermata \bar "||" %26 finis
+  }
+}
+
 % ViolinoI = {
 %   \relative c' {
 %     \clef treble

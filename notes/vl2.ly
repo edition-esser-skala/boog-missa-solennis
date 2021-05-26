@@ -251,3 +251,36 @@ CumSanctoViolinoII = {
     c r r2\fermata \bar "|." %147 finis
   }
 }
+
+CredoViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoCredo
+    r2 g''8\fE \tuplet 3/2 8 { h,16 c d } g,8 g'
+    c,4 r d'8 \tuplet 3/2 8 { fis,16 g a } d,8 a'
+    h4 r c8 \tuplet 3/2 8 { e,16 f g } c,8 g'
+    a4 r r8 \tuplet 3/2 8 { a,16 h c } h8 h
+    a a a a g4 r %5
+    e'8 \tuplet 3/2 8 { gis,16 a h } e,8 d' c4 r
+    d'8 \tuplet 3/2 8 { f,16 g a } h,8 d e4 r
+    f8 \tuplet 3/2 8 { a,16 b c } f,8 f' d4 r
+    e8 \tuplet 3/2 8 { g,16 a h } e,8 e' c4 r
+    a'8 \tuplet 3/2 8 { f16 g a } d,8 a' gis4 r8 h, %10
+    a c h h a4 r
+    d8 \tuplet 3/2 8 { f,16 g a } d,8 a' b4 r
+    c8 \tuplet 3/2 8 { e,16 f g } c,8 c' a4 r8 a
+    a8. g16 g4 f'8 \tuplet 3/2 8 { a,16 b c } f,8 f'
+    d4 r g8 \tuplet 3/2 8 { e16 f g } c,8 e %15
+    f4 r8 \tuplet 3/2 8 { a,16 b c } a8 a g g
+    f4 r a'8 \tuplet 3/2 8 { f16 g a } g,8 f'
+    e4 r c8 \tuplet 3/2 8 { a16 h c } d8 f
+    e4 r d8 \tuplet 3/2 8 { h16 c d } c8 e~
+    e[ d] g,, d'' e8. d16 c8 a'16 c, %20
+    d8. c16 h8 g'16 h, c8 g' e16 g c,8
+    r d h16 d g,8 c' \tuplet 3/2 8 { e,16 f g } c,8 e
+    d4 e8 e e e d d
+    c4 r g'8 \tuplet 3/2 8 { h,16 c d } g,8 f'
+    e \tuplet 3/2 8 { c16 d e } d8 \tuplet 3/2 8 { h16 c d } c8 e d, h'' %25
+    c,4 r r2\fermata \bar "||" %26 finis
+  }
+}

@@ -686,6 +686,8 @@ tempoQuoniam = \tempoMarkup "Tempo giusto"
 tempoCumSancto = \tempoMarkup "Adagio"
   tempoCumSanctoFuga = \tempoMarkup "Allegro"
 
+tempoCredo = \tempoMarkup "Allegro"
+
 
 markKyrieDC = {
   \once \override Score.RehearsalMark.self-alignment-X = #RIGHT

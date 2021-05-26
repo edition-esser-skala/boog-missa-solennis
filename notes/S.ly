@@ -333,16 +333,69 @@ CumSanctoSopranoLyrics = \lyricmode {
   men, a -- %145
   men, a -- men, a --
   men. %147 finis
-  % In glo -- ri -- a De -- i Pa -- tris, a -- men,
-  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
-  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
-  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
-  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
-  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
-  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
-  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
-  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
 }
+
+CredoSopranoNotes = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoCredo
+    \mvTr e'4\fE^\tutti e d8 d16 d d8 d
+    c4 c8 c d4. c8
+    h4 h8 d e e e e
+    e4 e8 e d c h h
+    a4. a8 g4 r %5
+    h8 h e d c4 c
+    f8 f f e16 d e8. e16 e4
+    f f8 f d4 d
+    e e8 e c8. c16 c4
+    d4. c8 h4 e8 d %10
+    c c h4 a r
+    d8. d16 d8 d b4 b
+    c8 c c c a4 a
+    a g c c
+    d8. d16 d4 e e %15
+    f f8 f f4( e8.) f16^\critnote
+    f4 c f f8 f
+    e8. e16 e8 e e4 d
+    d c8 e d4 e8 e
+    e d r d e8.([ d16)] c8 c %20
+    d8.([ c16] h4) c8 g' e16([ g)] c,8
+    r d h16([ d)] g,8 r e' e4
+    d e e( d)
+    c r r2
+    R1 %25
+    R\fermata \bar "||" %26 finis
+  }
+}
+
+CredoSopranoLyrics = \lyricmode {
+  Cre -- do Pa -- trem o -- mni -- po --
+  ten -- tem, fa -- cto -- rem
+  coe -- li et ter -- rae, vi -- si --
+  bi -- li -- um et in -- vi -- si --
+  bi -- li -- um, %5
+  et ex Pa -- tre na -- tum
+  an -- te o -- mni -- a sae -- cu -- la,
+  De -- um de De -- o,
+  lu -- men de lu -- mi -- ne,
+  De -- um ve -- rum de %10
+  De -- o ve -- ro,
+  ge -- ni -- tum non fa -- ctum,
+  con -- sub -- stan -- ti -- a -- lem
+  Pa -- tri, per quem
+  o -- mni -- a, per quem %15
+  o -- mni -- a fa -- cta
+  sunt, qui pro -- pter nos
+  ho -- mi -- nes et pro -- pter
+  no -- stram sa -- lu -- tem de --
+  scen -- dit, de -- scen -- dit, de -- %20
+  scen -- dit, de -- scen -- dit,
+  de -- scen -- dit, de -- scen --
+  dit de coe --
+  lis. %24 finis
+}
+
+
 
 % SopranoNotes = {
 %   \relative c' {
@@ -354,3 +407,55 @@ CumSanctoSopranoLyrics = \lyricmode {
 % SopranoLyrics = \lyricmode {
 %
 % }
+
+
+
+% Et in -- car -- na -- tus est de Spi -- ri -- tu San -- cto
+% ex Ma -- ri -- a Vir -- gi -- ne, et ho -- mo fa -- ctus est.
+%
+% Cru -- ci -- fi -- xus e -- ti -- am pro no -- bis
+% sub Pon -- ti -- o Pi -- la -- to, pas -- sus et se -- pul -- tus est.
+%
+% Et re -- sur -- re -- xit ter -- ti -- a di -- e
+% se -- cun -- dum Scri -- ptu -- ras,
+% et a -- scen -- dit in coe -- lum,
+% se -- det ad dex -- te -- ram Pa -- tris.
+% Et i -- te -- rum ven -- tu -- rus est cum glo -- ri -- a
+% iu -- di -- ca -- re vi -- vos et mor -- tu -- os,
+% cu -- ius re -- gni non e -- rit fi -- nis.
+% Et in Spi -- ri -- tum San -- ctum,
+% Do -- mi -- num et vi -- vi -- fi -- can -- tem,
+% qui ex Pa -- tre Fi -- li -- o -- que pro -- ce -- dit.
+% Qui cum Pa -- tre et Fi -- li -- o
+% si -- mul ad -- o -- ra -- tur et con -- glo -- ri -- fi -- ca -- tur:
+% qui lo -- cu -- tus est per Pro -- phe -- tas.
+% Et u -- nam san -- ctam ca -- tho -- li -- cam
+% et a -- po -- sto -- li -- cam Ec -- cle -- si -- am.
+% Con -- fi -- te -- or u -- num ba -- ptis -- ma
+% in re -- mis -- si -- o -- nem pec -- ca -- to -- rum.
+% Et ex -- pe -- cto re -- sur -- re -- cti -- o -- nem mor -- tu -- o -- rum,
+% et vi -- tam ven -- tu -- ri sae -- cu -- li.
+% A -- men.
+%
+%
+% ## Sanctus
+%
+% San -- ctus Do -- mi -- nus De -- us Sa -- ba -- oth.
+% Ple -- ni sunt coe -- li et ter -- ra glo -- ri -- a tu -- a.
+% O -- san -- na in ex -- cel -- sis.
+%
+%
+% ## Benedictus
+%
+% Be -- ne -- di -- ctus, qui ve -- nit in no -- mi -- ne Do -- mi -- ni.
+% O -- san -- na in ex -- cel -- sis.
+%
+%
+% ## Agnus Dei
+%
+% A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di:
+% Mi -- se -- re -- re no -- bis.
+% A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di:
+% Mi -- se -- re -- re no -- bis.
+% A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di:
+% Do -- na no -- bis pa -- cem.

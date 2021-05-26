@@ -631,6 +631,68 @@ CumSanctoBassFigures = \figuremode {
   r1 %147 finis
 }
 
+CredoOrgano = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoCredo
+    \mvTr c'8\fE-\tutti c, r c g' g, r g'
+    a a, r a' fis fis, r fis'
+    g g, r g' c c, r c'
+    a a, r a' d d, r g
+    d c d d, g g' r f! %5
+    e e, r e' a a, r a'
+    d d, r g c c ,r c
+    f f, r f' h, h' r h
+    e, e, r e' a a, r a
+    d d, r d' e e, r e' %10
+    a a, e' e, a4 r8 a'
+    f f, r f' g g, r g'
+    c c, r c f f, r f'
+    c' c, r c' a a, r a'
+    b? b, r b' c c, r c' %15
+    a a, r f' c' c, r c
+    f f, r4 r8 d'' h! g
+    c c, r c' a a, r h'
+    c c, r c g' g, r c'
+    g g, r4 r8 g' a8. g16 %20
+    f8 f g8. f16 e8 c r c'
+    h16( d) g,8 r g e16( g) c,8 r c
+    g'4 e8 c g2
+    c4 r8 c g' g, r g
+    c c, r g' c c' f, g %25
+    c,4 r r2\fermata \bar "||" %26 finis
+  }
+}
+
+CredoBassFigures = \figuremode {
+  r1
+  <5>2 <6>4. <[5]>8
+  r1
+  r2 <_+>
+  <4>4 <_+> r4. <\t>8 %5
+  <7 _+>4. <\t \t>8 r2
+  <_!>4. <7>8 r2
+  r <7>4. <6>8
+  r2 <7>4. <[6]>8
+  r2 <7 _+> %10
+  r4 <4>8 <_+> r2
+  <6> <_->
+  r1
+  \bo <[6] 4>4 <5 3> \bc <[6]>2
+  <7>4 <6>2. %15
+  \bo <[6 \l]>2 <6 4>4 \bc <[5 3]>
+  r2. \bo <[6 5]>8 \bc <[\t \t]>
+  <9> <8>4. <6 5>4. q8
+  <9>4. <[8]>8 r2
+  \bo <[6] 4>8 \bc <[5 3]>2.. %20
+  <6>2 <[6]>
+  \bo q \bc q
+  r4 \bo <[6]> <6 4> \bc <[5] 3>
+  r1
+  r4. <[7]> <6 5>4 %25
+  r1 %26 finis
+}
+
 % Organo = {
 %   \relative c {
 %     \clef bass

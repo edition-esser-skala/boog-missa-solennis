@@ -287,6 +287,66 @@ CumSanctoAltoLyrics = \lyricmode {
   men. %147 finis
 }
 
+CredoAltoNotes = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoCredo
+    \mvTr g'4\fE^\tutti g g8 g16 g g8 g
+    e4 e8 e d4 d
+    d g8 g g g g g
+    a8. a16 a4 fis8 a g g
+    g4( fis8.) g16 g8 g16 g g8 g %5
+    gis gis16 gis gis8 gis a a a a16 a
+    a8 a g g g8. g16 g4
+    a a8 a a8.([ g16)] g4
+    g g8 g g8. f16 f4
+    f a gis gis8 gis %10
+    a a a([ gis)] a4 e8. e16
+    f8 f f a g4 g
+    e e f f
+    f e f^\critnote a
+    a8. g16 g4 g g %15
+    a a8 a a4( g8.) f16
+    f4 r r8 a g g
+    g4 g a a8 g
+    g4 g8 g g4 g8 g
+    g g r4 r8 g e4 %20
+    f8 f d4 e r8 g
+    g g r g g g r g
+    g4 g8 g g2
+    g4 r r2
+    R1 %25
+    R\fermata \bar "||" %26 finis
+  }
+}
+
+CredoAltoLyrics = \lyricmode {
+  Cre -- do Pa -- trem o -- mni -- po --
+  ten -- tem, fa -- cto -- rem
+  coe -- li et ter -- rae, vi -- si --
+  bi -- li -- um et in -- vi -- si --
+  bi -- li -- um, et in u -- num %5
+  Do -- mi -- num Je -- sum Chri -- stum, Fi -- li -- um
+  De -- i u -- ni -- ge -- ni -- tum,
+  De -- um de De -- o,
+  lu -- men de lu -- mi -- ne,
+  De -- um ve -- rum de %10
+  De -- o ve -- ro, ge -- ni --
+  tum non fa -- ctum, con -- sub --
+  stan -- ti -- a -- lem
+  Pa -- tri, per quem
+  o -- mni -- a, per quem %15
+  o -- mni -- a fa -- cta
+  sunt, et pro -- pter
+  no -- stram, no -- stram sa --
+  lu -- tem de -- scen -- dit, de --
+  scen -- dit, de -- scen -- %20
+  dit, de -- scen -- dit, de --
+  scen -- dit, de -- scen -- dit, de --
+  scen -- dit de coe --
+  lis. %24 finis
+}
+
 % AltoNotes = {
 %   \relative c' {
 %     \clef treble
