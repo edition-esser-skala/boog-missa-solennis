@@ -306,6 +306,104 @@ EtIncarnatusViolinoI = {
   }
 }
 
+EtResurrexitViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \tempoEtResurrexit
+      \set Score.currentBarNumber = #74
+    c'8\fE c32( d e f) g16 e d c g' e d c
+    h8 g32( a h c) d16 h a g f' d c h %75
+    c8 c32( d e f) g16 e d c c' a g fis
+    g d c h g' d c h a8 fis'
+    g, g32( a h c) d16 h a g a,8 fis'
+    g,4 g'8 a16 h c d e f!
+    g8. f16 e4 d %80
+    e8 c32( d e f) g16 e d c d h a g
+    c8 a32( h c d) e16 c h a a' g f d'
+    h8 g32( a h c) d16 h a g c4
+    c c h
+    c8 c,32( d e f) g16 e d c d,8 h' %85
+    c,4 r r
+    R2.*3
+    r8 c''\fE r c r c %90
+    r c r h r h
+    r a r a r gis
+    r a r gis r gis
+    r a,\p r a r a
+    r a r a r gis %95
+    a a32(\f h c d) e16 c h a a' e d c
+    f8 d'32( c h a) g16 d' d f, e8 g32( f e d)
+    e16 g c e, \kneeBeam d8 c' g,, h''
+    c,4 r r
+    R2. %100
+    r8 c32( d e f) g16 e d c f d c h
+    c4 r r
+    R2.
+    r8 g32( a h c) d16 h a g c a g fis
+    g4 g, r %105
+    R2.*4
+    r8 e''32( fis g a) h16 g fis e a fis e dis %110
+    e4 r r
+    R2.
+    r8 d,32(\pE e f g) a16 f e d d'4
+    R2.
+    r8 c,32( d e f) g16 e d c c'4 %115
+    R2.*8 %123
+    r8 a32(\fE h c d) e16 c h a d h a gis
+    a4 r r %125
+    R2.*2
+    r8 h\p h h h h
+    c a a a a a
+    h g32(\f a h c) d16 h a g g' d c h %130
+    e4 r r
+    d8\pE d32( e fis g) a16 fis e d h' g fis g
+    e c h a h8 g' a, fis'
+    \kneeBeam g,, \once \slurDashed g''32(\f a h c) d16 h a g d' h g f
+    e8 c32( d e f) g8 f e d %135
+    e c' c c h h
+    c4. c8 c c
+    c4 h8 g g,,4
+    \tempoMortuorum r4 es''\pp h!
+    c8 c c c c c %140
+    h! h c c c c
+    c c h! h a a \noBreak
+    h2.\fermata \bar "||"
+    \time 4/4 \tempoEtVitam R1 \noBreak
+    r2 r4 c\fE %145
+    h e8 d c a d c16 d
+    h8 a16 h g8 a16 h c4 r8 c~
+    c16 a d c h4 c e
+    d g, a8 c16 h a4
+    h c8 d e4 e %150
+    d2 e4 r8 e
+    d d r d c c r c
+    h h r gis' a a a a
+    a a h, gis' a, e'\pp e8.(\trill d32 e)
+    f8 fis fis8.(\trill e32 fis) g8 gis gis8.(\trill fis32 gis) %155
+    a4 r r2
+    r r4 r8 e~\f
+    e16 cis fis e dis4 e8 e~ e16 c? f e
+    d8 d~ d16 h e d c8 c~ c16 a d c
+    h8 d e4 c8 a16 c d4 %160
+    h8 d g16 fis e d e fis g h, a8 fis'
+    g, d'\pp d8.(\trill c32 d) e8 e e8.(\trill d32 e)
+    fis8 fis fis8.(\trill e32 fis) g8 d d4\f
+    h e8 d c4 c
+    d8 c16 d h4 c c %165
+    d2 g,4 r8 c~
+    c16 a d c d8 d~ d16 h e d e8 e~
+    e16 c f e f8 f~ f16 d g f g8. f16
+    e8 g~ g16 e a g f8 f~ f16 d g f
+    e8 e~ e16 c f e d8 d~ d16 h e d %170
+    c8 c~ c16 a d c h8 d g16 f e d
+    e8 d e4 d8 d~ d16 h e d
+    c8 c~ c16 a d c h8. c16 d4~
+    d8 c4 h8 c8 g'\pp g8.(\trill f32 g)
+    a8 a a8.(\trill g32 a) h8 h h8.(\trill a32 h) %175
+    c8\f c16 e, d8 h' c,4 r\fermata \bar "|." %176 finis
+  }
+}
+
 % ViolinoI = {
 %   \relative c' {
 %     \clef treble

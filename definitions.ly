@@ -688,6 +688,9 @@ tempoCumSancto = \tempoMarkup "Adagio"
 
 tempoCredo = \tempoMarkup "Allegro"
 tempoEtIncarnatus = \tempoMarkup "Largo"
+tempoEtResurrexit = \tempoMarkup "Allegro"
+  tempoMortuorum = \tempoMarkup "Adagio"
+  tempoEtVitam = \tempoMarkup "Allegro"
 
 
 markKyrieDC = {

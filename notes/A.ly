@@ -389,6 +389,195 @@ EtIncarnatusAltoLyrics = \lyricmode {
   fa -- ctus est. %50 finis
 }
 
+EtResurrexitAltoNotes = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \autoBeamOff \tempoEtResurrexit
+      \set Score.currentBarNumber = #74
+    \mvTr g'4\fE^\tutti g g
+    g g f8 g16 g %75
+    g4 g r8 fis
+    g g16 g g4( fis)
+    g r r
+    R2.
+    r4 g f %80
+    e8.([ f16)] g4 g
+    e e8 a a a
+    g4. g8 g4~
+    g g2
+    g4 r r %85
+    R2.*4
+    g2. %90
+    g
+    e2 e4
+    e e r
+    e2.\p
+    e2 e4 %95
+    e a8\f a a a16 a
+    a4 g8 g g4
+    g g2
+    g4 \mvTr e\pE^\solo e
+    e8 d16 e f4 f %100
+    f16 e e8 r4 r
+    e4. e8 fis4
+    g g( fis)
+    g r r
+    r g g %105
+    g fis fis8 fis
+    fis4 e g8 g
+    a2 g4
+    a g( fis)
+    e r r %110
+    r g g
+    g a g
+    g8. f16 f2
+    f4. a8 g f
+    f([ e)] e4 r8 c' %115
+    h8. c16 h4 a
+    a8 gis h4 h
+    h8. a16 a4 c8 h16([ a)]
+    a4 gis a~
+    a8 h a4( gis) %120
+    a r r
+    R2.*12 %133
+    r4 \mvTr g\fE^\tutti g
+    g g g %135
+    g2 g4
+    g4. g8 g g
+    g4 g r
+    \tempoMortuorum R2.
+    r4 es\pp es %140
+    d es2~
+    es4 d c \noBreak
+    d2.\fermata \bar "||"
+    \time 4/4 \tempoEtVitam r4 g\fE e a8 g \noBreak
+    f d g f16 g e8([ d16 e] c[ d e f]) %145
+    g4 r8 g~ g16[ e a g] fis4
+    g d e e
+    f d e g
+    g r r2
+    r4 g e a8 g %150
+    f d g f16 g e8 c r g'
+    a[ f16 a] \once \tieDashed g4~ g8[ e16 g] f4~
+    f8[ d16 f] e4 e( f16[ g f e]
+    f8) e e4^\critnote e r
+    R1 %155
+    r4 r8 a~ a16[ fis h a] gis4
+    a e8([ fis)] g4 g(
+    fis2) e4 r8 a(
+    f4 e) e a~
+    a8 g r g e4 a %160
+    g g8 g g g g([ fis)]
+    g4 r r2
+    R1
+    r4 g e a8 g
+    f! e d8. d16 e4 e( %165
+    f d) e g~
+    g8 f r f( d) g r g(
+    e) a r a4 g8 r g
+    g4 r8 e a[ f16 a] g4~
+    g8[ e16 g] f4~ f8[ d16 f] e4~ %170
+    e8[ c16 e] d2 g4~
+    g8 g g4 g g
+    e a8 fis g d16([ e)] f?8 g16 f
+    e4( d) c r
+    R1 %175
+    g'8 g g4 g r\fermata \bar "|." %176 finis
+  }
+}
+
+EtResurrexitAltoLyrics = \lyricmode {
+  Et re -- sur -- %74
+  re -- xit ter -- ti -- a %75
+  di -- e se --
+  cun -- dum Scri -- ptu --
+  ras,
+
+  et a -- %80
+  scen -- dit in
+  coe -- lum, se -- det ad
+  dex -- te -- ram __
+  Pa --
+  tris. %85
+
+  Iu -- %90
+  di --
+  ca -- re
+  vi -- vos
+  et
+  mor -- tu -- %95
+  os, cu -- ius re -- gni non
+  e -- rit, non e --
+  rit fi --
+  nis. Et in
+  Spi -- ri -- tum San -- ctum, %100
+  Do -- mi -- num
+  et vi -- vi --
+  fi -- can --
+  tem,
+  qui ex %105
+  Pa -- tre Fi -- li --
+  o -- que, Fi -- li --
+  o -- que
+  pro -- ce --
+  dit. %110
+  Qui cum
+  Pa -- tre et
+  Fi -- li -- o
+  si -- mul ad -- o --
+  ra -- tur et %115
+  con -- glo -- ri -- fi --
+  ca -- tur, qui lo --
+  cu -- tus est per Pro --
+  phe -- tas, per __
+  Pro -- phe -- %120
+  tas.
+
+  Et ex -- %134
+  pe -- cto, ex -- %135
+  pe -- cto
+  re -- sur -- re -- cti --
+  o -- nem
+
+  mor -- tu -- %140
+  o -- _
+  _ _
+  rum.
+  Et vi -- tam ven --
+  tu -- ri sae -- cu -- li, a -- %145
+  men, a -- _
+  men, ven -- tu -- ri
+  sae -- cu -- li, a --
+  men,
+  et vi -- tam ven -- %150
+  tu -- ri sae -- cu -- li, a -- men, a --
+  _ _ _
+  men, a --
+  men, a -- men.
+  %155
+  A -- _
+  men, a -- men, a --
+  men, a --
+  men, a --
+  men, ven -- tu -- ri %160
+  sae -- cu -- li, a -- men, a --
+  men.
+
+  Et vi -- tam ven --
+  tu -- ri sae -- cu -- li, a -- %165
+  men, a --
+  men, a -- men, a --
+  men, a -- men, a --
+  men, a -- _ _
+  _ _ %170
+  men, a --
+  men, a -- men, et
+  vi -- tam ven -- tu -- ri sae -- cu -- li,
+  a -- men,
+  %175
+  a -- men, a -- men. %176 finis
+}
+
 % AltoNotes = {
 %   \relative c' {
 %     \clef treble

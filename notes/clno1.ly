@@ -113,3 +113,66 @@ CredoClarinoI = {
     e c16 c c4 r2\fermata \bar "||" %26 finis
   }
 }
+
+EtResurrexitClarinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \tempoEtResurrexit
+      \set Score.currentBarNumber = #74
+    g''4\fE g g
+    g r r8 g %75
+    g4 r r8 fis
+    g g g4 fis
+    g r r
+    g r r
+    g r r8 g %80
+    g4 g r
+    r r8 a a a
+    g4. g8 g4~
+    g g2
+    g4 r r8 g %85
+    g4 r r
+    R2.*3
+    g4\fE r r %90
+    g r r
+    e r r
+    e8 e16 e e4 r
+    R2.*2 %95
+    r4 r8 e\fE e e
+    f4 f8 f e4
+    e d4. d8
+    c4 r r
+    R2.*34 %133
+    r4 g'\fE g
+    g g g %135
+    g2 g4
+    g4. g8 g g
+    g4 g r
+    \tempoMortuorum R2.*4 \noBreak %142
+    R2.\fermata \bar "||"
+    \time 4/4 \tempoEtVitam R1*3 %146
+    r4 r8 g\fE g4 r
+    r r8 g g4 r8 g
+    g4 r r2
+    r4 r8 g g4 r %150
+    r r8 g g g r4
+    R1*2
+    r4 e8 e16 e e4 r
+    R1*6 %160
+    g4\fE r8 g g g g fis
+    g4 r r2
+    R1*2
+    r4 g\fE g r %165
+    r g g r
+    R1
+    r2 r8 \pao d g8. f16
+    e4 r r2
+    R1 %170
+    r2 r8 g g g
+    g g g4 g r
+    R1
+    r8 g g8. g16 e4 r
+    R1 %175
+    e8.[\fE e16] d4 c r\fermata \bar "|."
+  }
+}

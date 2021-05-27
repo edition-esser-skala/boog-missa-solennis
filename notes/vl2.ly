@@ -309,3 +309,101 @@ EtIncarnatusViolinoII = {
     c c h h c2\fermata \bar "||"
   }
 }
+
+EtResurrexitViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \tempoEtResurrexit
+      \set Score.currentBarNumber = #74
+    c'8\fE c32( d e f) g16 e d c g' e d c
+    h8 g32( a h c) d16 h a g f' d c h %75
+    c8 c32( d e f) g16 e d c e c h a
+    h d c h g' d c h a8 fis'
+    g, g32( a h c) d16 h a g a,8 fis'
+    g,4 g'8 a16 h c d e f!
+    g8. f16 e4 d %80
+    e8 c32( d e f) g16 e d c d h a g
+    c8 a32( h c d) e16 c h a a' g f d'
+    h8 g32( a h c) d16 h a g c4
+    e, e d
+    c8 c32( d e f) g16 e d c d,8 h' %85
+    c,4 r r
+    R2.*3
+    r8 e'\fE r e r e %90
+    r d r d r d
+    r c r c r h
+    r c r h r h
+    r c,\p r c r c
+    r h r h r h %95
+    a a'32(\f h c d) e16 c h a a' e d c
+    f8 d'32( c h a) g16 d' d f, e8 g32( f e d)
+    e16 g c e, \kneeBeam d8 c' g,, h''
+    c,4 r r
+    R2. %100
+    r8 c32( d e f) g16 e d c f d c h
+    c4 r r
+    R2.
+    r8 g32( a h c) d16 h a g c a g fis
+    g4 g, r %105
+    R2.*4
+    r8 e''32( fis g a) h16 g fis e a fis e dis %110
+    e4 r r
+    R2.
+    r8 d,32(\pE e f g) a16 f e d d'4
+    R2.
+    r8 c,32( d e f) g16 e d c c'4 %115
+    R2.*8 %123
+    r8 a32(\fE h c d) e16 c h a d h a gis
+    a4 r r %125
+    R2.*2
+    r8 g\p g g g g
+    a fis fis fis fis fis
+    g g32(\f a h c) d16 h a g g' d c h %130
+    e4 r r
+    d8\pE d32( e fis g) a16 fis e d h' g fis g
+    e c h a^\critnote h8 g' a, fis'
+    \kneeBeam g,, g''32(\f a h c) d16 h a g d' h g f
+    e8 c32( d e f) g8 f e d %135
+    e e e e d d
+    e4. e8 e e
+    e4 d8 h g,4
+    \tempoMortuorum R2.
+    r8 es'\pp es es es es %140
+    d d es es es es
+    es es d d c c \noBreak
+    d2.\fermata \bar "||"
+    \time 4/4 \tempoEtVitam r4 g\fE e a8 g \noBreak
+    f d g f16 g e8 d16 e c d e f %145
+    g4 r8 g~ g16 e a g fis4
+    g d e e
+    f d e g
+    g r r2
+    r4 g e a8 g %150
+    f d g f16 g e8 c r g'
+    a f16 a g4~ g8 e16 g f4~
+    f8 d16 f e8 h' c16 d c h a8 d~
+    d c h4\trill a8 c\pp c8.(\trill h32 c)
+    d8 a a8.(\trill g32 a) h8 h h8.(\trill a32 h) %155
+    c4 r8 a~\f a16 fis h a gis4
+    a e8 fis g4 g
+    fis2 e4 r8 a
+    f4 e e a~
+    a8 g r g e4 a %160
+    g8 h g'16 fis e d e fis g h, a8 fis'
+    g, h\pp h8.(\trill a32 h) c8 c c8.(\trill h32 c)
+    a8 a a8.(\trill g32 a) h4 r
+    r g\f e a8 g
+    f! e d8.-\critnote d16 e4 e %165
+    f d e g~
+    g8 f r f d g r g
+    e a r a4 g8 r g
+    g4 r8 e a f16 a g4~
+    g8 e16 g f4~ f8 d16 f e4~ %170
+    e8 c16 e d4 d8 h' c8. d16
+    e8 d e4 d g,
+    e a8 fis g d16 e f?8 g16 f
+    e8 c'4 h8 c e\pp e8.(\trill d32 e)
+    f8 f f8.(\trill e32 f) d8 d d8.(\trill c32 d) %175
+    e8\f e d h' c,4 r\fermata \bar "|." %176 finis
+  }
+}
