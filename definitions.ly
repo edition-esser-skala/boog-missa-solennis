@@ -692,6 +692,15 @@ tempoEtResurrexit = \tempoMarkup "Allegro"
   tempoMortuorum = \tempoMarkup "Adagio"
   tempoEtVitam = \tempoMarkup "Allegro"
 
+tempoSanctus = \tempoMarkup "Andante"
+  tempoPleni = \tempoMarkup "Allegro"
+
+tempoBenedictus = \tempoMarkup "Tempo giusto"
+tempoOsanna = \tempoMarkup "Allegro"
+
+tempoAgnus = \tempoMarkup "Adagio"
+tempoDona = \tempoMarkup "Allegro"
+
 
 markKyrieDC = {
   \once \override Score.RehearsalMark.self-alignment-X = #RIGHT

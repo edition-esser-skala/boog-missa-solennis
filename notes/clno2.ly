@@ -176,3 +176,79 @@ EtResurrexitClarinoII = {
     c8\fE c,16 e g8. g16 e4 r\fermata \bar "|." %176 finis
   }
 }
+
+SanctusClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoSanctus
+    R1*4
+    r2 r4 r8 e'\fE %5
+    d e16 d g,8. g16 e4 r
+    R1*2
+    r2 c'4 d \noBreak
+    c4. c8 d2\fermata \bar "||" %10
+    \time 3/4 \tempoPleni e4 r e \noBreak
+    d r d
+    c8 d e4 e
+    d r d
+    c r d %15
+    d r r
+    c, r r
+    d' r r
+    c r r
+    d r r %20
+    d2 c4~
+    c_\critnote g4. g8
+    e4 r r
+    R2.*10 %33
+    r4 d' d
+    c8 d e4 r %35
+    R2.
+    r4 r d
+    d d c
+    c8 c,16 e g4. g8
+    e4 r r\fermata \bar "|." %40 finis
+  }
+}
+
+OsannaClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \tempoOsanna
+      \set Score.currentBarNumber = #44
+    R2.*11 %54
+    r4 d'\fE d %55
+    c8 d e4 r
+    R2.
+    r4 r d
+    d d c
+    c8 c,16 e g4. g8 %60
+    e4 r r\fermata \bar "|." %61 finis
+  }
+}
+
+AgnusClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoAgnus
+    R1*24 %24
+    r2 r4 d'\f %25
+    d d8 d c4 e8 e
+    d4 e e d8 c \noBreak
+    d1\fermata \bar "||"
+    \tempoDona R1*2 %30
+    r8 e16 c d8 g, c4 r
+    R1*4 %35
+    r8 c d e16 d c4 r
+    R1*4 %40
+    r8 e d[ g,] c16 d e8 r4
+    r r8 g, c16 d e8 r4
+    R1*2
+    r2 r8 d e8. e16 %45
+    d8 g, r4 r2
+    r r8 c_\critnote g8. g16
+    e8 c' d g, c e f e16 d
+    c8 e d d e e d\trill d
+    e \tuplet 3/2 8 { c16 d e } e c d g, c8 g16 g e4\fermata \bar "|." %50 FINIS
+  }
+}

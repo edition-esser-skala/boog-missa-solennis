@@ -166,3 +166,74 @@ EtResurrexitTimpani = {
     c8\fE c g8. g16 c4 r\fermata \bar "|." %176 finis
   }
 }
+
+SanctusTimpani = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoSanctus
+    R1*5 %5
+    r4 r8 g\fE c4 r
+    R1*3 \noBreak
+    R1\fermata \bar "||" %10
+    \time 3/4 \tempoPleni c4 r c \noBreak
+    g r g
+    c c c
+    g r r
+    R2. %15
+    g4 r r
+    c-\critnote r r
+    g r r
+    c r r
+    R2. %20
+    g2 c4
+    r g4. g8
+    c4 r r
+    R2.*10 %33
+    r4 g g
+    c8. c16 c4 r %35
+    R2.*2
+    r4 g c
+    c g4. g8
+    c4 r r\fermata \bar "|." %40 finis
+  }
+}
+
+OsannaTimpani = {
+  \relative c {
+    \clef bass
+    \key c \major \time 3/4 \tempoOsanna
+      \set Score.currentBarNumber = #44
+    R2.*11 %54
+    r4 g\fE g %55
+    c8. c16 c4 r
+    R2.*2
+    r4 g c
+    c g4. g8 %60
+    c4 r r\fermata \bar "|." %61 finis
+  }
+}
+
+AgnusTimpani = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoAgnus
+    R1*25 %25
+    g4\fE g8 g c4 c8 c
+    g4 g g4. g8 \noBreak
+    g1\fermata \bar "||"
+    \tempoDona R1*2 %30
+    r4 r8 g c4 r
+    R1*4 %35
+    r4 r8 g c4 r
+    R1*4 %40
+    r4 r8 g c4 r
+    r r8 g c4-\critnote r
+    R1*2
+    r2 r8 g c8. c16 %45
+    g4 r r2
+    r r8 c g8.-\critnote g16
+    c4 r8 g c4 r8 g
+    c4 g c8-\critnote c g8. g16
+    c4 r8 g c g c4\fermata \bar "|." %50 FINIS
+  }
+}
