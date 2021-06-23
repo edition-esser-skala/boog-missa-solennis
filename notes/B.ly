@@ -108,7 +108,7 @@ ChristeBassoNotes = {
     f'8 d e2
     a,4 r r %75
     R2.*8 %83
-    R2.\fermata \bar "||" %84 finis
+    R2.\fermata \markKyrieDC \bar "||" %84 finis
   }
 }
 
