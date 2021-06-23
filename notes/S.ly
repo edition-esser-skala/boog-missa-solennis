@@ -155,7 +155,7 @@ QuiTollisSopranoNotes = {
     r2 r4 r8 \mvTr h\pE^\solo %45
     h4 e8 gis, a16([ gis)] a8 r a
     f'4. a,8 a16([ gis)] gis8 r4
-    \mvTr gis8.\fE^\tutti gis16 gis4 a8. a16 a4
+    \mvTr gis\fE^\tutti gis8^\critnote gis a8. a16 a4
     a8 a a a b4 b
     d8 d d d c4 b %50
     b( a) g r

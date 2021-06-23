@@ -94,8 +94,21 @@ ChristeBassoNotes = {
     d4 g,,4. g'8 %60
     f4~ f16[ g a f] d8 g
     e16[( d)] c8 r c b'8.([ a32 g]
-    a16[ e)] f8 r d s4
-    s2.*21 \bar "||" %84 finis
+    a16[ e)] f8 r d c'8.([ h32 a]
+    h16[ fis)] g8 r e d'8.[ c32 h]
+    c16[ h a gis] a[ f e d] e[ d c h] %65
+    c[ h] a8 r4 r8 a'
+    f([ a16 f)] h,4 r8 g'
+    e([ g16 e)] a,4 r8 f'
+    d([ f16 d)] gis,4 r8 e'
+    c4~ c16[ e d c] d[ f e d] %70
+    e4~ e16[ gis fis e] fis[ a gis fis]
+    gis4~ gis16[ a h gis] e[ fis gis e]
+    a4~ a16[ g f e] d[ c h a]
+    f'8 d e2
+    a,4 r r %75
+    R2.*8 %83
+    R2.\fermata \bar "||" %84 finis
   }
 }
 
@@ -113,28 +126,76 @@ ChristeBassoLyrics = \lyricmode {
   Chri -- ste e -- %59
   lei -- son, e -- %60
   lei -- son, e --
+  lei -- son, e -- lei --
+  son, e -- lei --
+  son, e -- lei --
+  _ _ _ %65
+  _ son, e --
   lei -- son, e --
-  lei -- son, e
-  % Chri -- ste e -- lei -- son,
-  % Chri -- ste e -- lei -- son,
-  % Chri -- ste e -- lei -- son,
-  % Chri -- ste e -- lei -- son,
-  % Chri -- ste e -- lei -- son,
-  % Chri -- ste e -- lei -- son,
-  % Chri -- ste e -- lei -- son,
+  lei -- son, e --
+  lei -- son, e --
+  lei -- _ %70
+  _ _
+  _ _
+  _ _
+  son, e -- lei --
+  son. %75 finis
 }
 
 GloriaBassoNotes = {
   \relative c {
     \clef bass
     \key c \major \time 4/4 \autoBeamOff \tempoGloria
-    s1*38 \bar "||"
+    \mvTr c'8\fE^\tuttiE c,16 c f8 f g([ g,)] c4
+    c'8 c16 c a8 a h h g g
+    a a d, d g c, d4
+    g, r r g
+    r g r g %5
+    c c8 c g'16 g, g8 r4
+    f' d e c
+    d h c c
+    g'8 g c c, g'4( g,)
+    c r r2 %10
+    r8 \mvTr g'\pE^\solo \once \tieDashed c4~ c16[ g a e] f8. g16
+    e4 r e8 g e d16 c
+    g'4 a8 h c16([ h a g] fis8) c'
+    h4 r r8 g a h
+    e,16[ g a h] \tuplet 3/2 8 { \sbOn c[ h c a g a] \sbOff } d,[ fis g a] \tuplet 3/2 8 { \sbOn h[ a h g fis g] \sbOff } %15
+    c,[ e fis g] \tuplet 3/2 8 { \sbOn a[ g a fis e fis] \sbOff } d[ c' h a] h[ a g fis]
+    g[ e d c] d8. d16 g,4 r
+    R1*16 %33
+    r2 \mvTr c8\fE^\tutti e16 f g8 a16 h
+    c8 c, e c g'4 g, %35
+    r c8 c16 c f8 f d d16 d
+    g4 g c8 a16 a f8([ g)]
+    c,4 r r2\fermata \bar "||" %38 finis
   }
 }
 
 GloriaBassoLyrics = \lyricmode {
-  % Lau -- da -- mus te, be -- ne -- di -- ci -- mus te,
-  % ad -- o -- ra -- mus te, glo -- ri -- fi -- ca -- mus te.
+  Glo -- ri -- a in ex -- cel -- sis,
+  glo -- ri -- a in ex -- cel -- sis, in ex --
+  cel -- sis, in ex -- cel -- sis De --
+  o. Pax,
+  pax, pax, %5
+  pax, pax ho -- mi -- ni -- bus
+  bo -- nae, bo -- nae
+  vo -- lun -- ta -- tis,
+  bo -- nae vo -- lun -- ta --
+  tis. %10
+  Lau -- da -- _ mus
+  te, be -- ne -- di -- ci -- mus
+  te, ad -- o -- ra -- mus
+  te, glo -- ri -- fi --
+  ca -- _ _ _ %15
+  _ _ _ _
+  _ _ mus te.
+
+  Do -- mi -- ne, Do -- mi -- ne %34
+  De -- us, A -- gnus De -- i, %35
+  Fi -- li -- us Pa -- tris, Fi -- li -- us
+  Pa -- tris, Fi -- li -- us Pa --
+  tris. %38 finis
 }
 
 QuiTollisBassoNotes = {
@@ -142,12 +203,44 @@ QuiTollisBassoNotes = {
     \clef bass
     \key a \minor \time 4/4 \autoBeamOff \tempoQuiTollis
       \set Score.currentBarNumber = #39
-    s1*22 \bar "||" %60 finis
+    r4 \mvTr a\fE^\tutti e' e8 e
+    a4 a,8 a' a4. a8 %40
+    g2 g,4 r
+    f'4. f8 e4 e
+    a4. a8 ais4 ais
+    h( h,) e r
+    R1*3 %47
+    d4 d8 d c8. c16 c4
+    c8 c c c b4 b
+    h8 h h h c4 cis %50
+    d2 g,4 r
+    R1*3
+    r4 a'8 a g2 %55
+    f4 f8 f fis2
+    e e~
+    e a,4 r
+    R1
+    R\fermata \bar "||" %60 finis
   }
 }
 
 QuiTollisBassoLyrics = \lyricmode {
+  Qui tol -- lis pec -- %39
+  ca -- ta, pec -- ca -- ta %40
+  mun -- di:
+  Mi -- se -- re -- re,
+  mi -- se -- re -- re
+  no -- bis.
 
+  Su -- sci -- pe, su -- sci -- pe %48
+  de -- pre -- ca -- ti -- o -- nem,
+  de -- pre -- ca -- ti -- o -- nem %50
+  no -- stram.
+
+  Mi -- se -- re -- %55
+  re, mi -- se -- re --
+  re no --
+  bis. %58 finis
 }
 
 CumSanctoBassoNotes = {
@@ -155,8 +248,37 @@ CumSanctoBassoNotes = {
     \clef bass
     \key c \major \time 4/4 \autoBeamOff \tempoCumSancto
       \set Score.currentBarNumber = #102
-    s1*6 \bar "||" %107
-    \tempoCumSanctoFuga s1*26 %133
+    r2 r4 \mvTr c\fE^\tuttiE
+    g' g g f
+    f e fis g8 g
+    a4 d, g c,
+    f fis g2~ \noBreak
+    g g,\fermata \bar "||" %107
+    \tempoCumSanctoFuga r4 g' a4. g16 a \noBreak
+    f8([ d)] e f g4. f16 g
+    e8 c d e f e d4 %110
+    c r r8 e16([ fis] g8[ fis16 g]
+    a4. g8) fis d16([ e] fis8[ e16 fis]
+    g4.) f8 e16[ fis] g4 f8~
+    f[ e16 d] c8[ h] a4 a'
+    d,2 g, %115
+    c4 r r8 e( f[ g16 f]
+    e8[ d)] c4 r2
+    R1*2
+    r4 g' a4. g16 a %120
+    f8([ d)] e f g4. f16 g
+    e8 c d e f[ e] d4~
+    d8[ c16 d] e8[ d] c[ h] a4
+    r d( g4. f8)
+    e4 c( f4. e8) %125
+    d8 d16([ e] fis8[ e16 fis]) g8 e16([ fis] gis8[ fis16 gis)]
+    a4 r r2
+    r r4 e
+    f!4. e16 f d8 h c d
+    e4.( d8) c a16([ h] c8[ h16 c] %130
+    \once \stemUp d4. c8) h8 g16([ a] h8[ a16 h)]
+    c4 r r2
+    R1
     r4 g' a4. g16 a
     f8 d e f g4.( f8) %135
     e4 r8 c'( d4. c16[ d)]
@@ -175,18 +297,38 @@ CumSanctoBassoNotes = {
 }
 
 CumSanctoBassoLyrics = \lyricmode {
-  % Cum San -- cto %102
-  % Spi -- ri -- tu in
-  % glo -- ri -- a
-  % De -- i Pa -- tris,
-  % De -- i Pa -- tris,
-  % a -- men.
+  Cum %102
+  San -- cto Spi -- ri --
+  tu in glo -- ri -- a
+  De -- i Pa -- tris, %105
+  a -- men, a --
+  men.
+  In glo -- ri -- a
+  De -- i, in glo -- ri -- a
+  De -- i Pa -- tris, a -- men, a -- %110
+  men, a --
+  men, a --
+  men, a -- _ _
+  _ men, a --
+  men, a -- %115
+  men, a --
+  men,
 
-  % In glo -- ri -- a De -- i Pa -- tris, a -- men,
-  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
-  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
-  % in glo -- ri -- a De -- i Pa -- tris, a -- men,
-  in glo -- ri -- a %134
+  in glo -- ri -- a %120
+  De -- i, in glo -- ri -- a
+  De -- i Pa -- tris, a -- _
+  _ _ men,
+  a --
+  men, a -- %125
+  men, a -- men, a --
+  men,
+  in
+  glo -- ri -- a De -- i Pa -- tris,
+  a -- men, a -- %130
+  men, a --
+  men,
+
+  in glo -- ri -- a
   De -- i Pa -- tris, a -- %135
   men, a --
   men, a -- men,

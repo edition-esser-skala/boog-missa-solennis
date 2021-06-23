@@ -74,8 +74,8 @@ ChristeViolinoII = {
     r8 a'' f16 cis d8 d,4
     r8 h'' gis16 dis e8 e,4
     R2. %65
-    r8 e'\f c16 gis a8 a, e''
-    f16\p cis d8 g, f' f8.(\trill e32 d)
+    r8 e'\f c16 gis a8 a, e''\p
+    f16 cis d8 g, f' f8.(\trill e32 d)
     e16 h c8 f, e' e8.(\trill d32 c)
     d16 a h8 e, d' d8.(\trill c32 h)
     c16 gis a8 a,4 r %70

@@ -112,8 +112,8 @@ ChristeOrgano = {
     f4 r8 a fis d
     g4 r8 h gis e
     a,8. h16 c8 a gis e %65
-    a4\fE r8 a c a
-    d4\pE r8 d' h g
+    a4\fE r8 a c a\pE
+    d4 r8 d' h g
     c4 r8 c a a,
     h4 r8 h' gis e
     a a, r a h g %70
@@ -167,15 +167,15 @@ ChristeBassFigures = \figuremode {
   r4. <_->
   r <6\\>
   r <6\\>
-  r4 <6> q %65
+  r8. <[6\\]>16 <6>4 q8 <[_+]> %65
   r2.
   r2 <6 5>4
   r2 <6 5>4
   r2 <6 5>4
-  r2. %70
+  r2 <[6]>4 %70
   r2 <_+>8 <6\\>
   <_+>2 r8 <\t>
-  r2.
+  <[6]>2.
   r4 <4> <_+>
   r4. <6\\>8 <6>4 %75
   <6>2 <6\\>4
@@ -204,9 +204,9 @@ GloriaOrgano = {
     g'8 g c c, g'4 g,
     \sbOn c8 \tuplet 3/2 8 { c'16 h c d c d h a h c h c a g a f e f } g8 \sbOff %10
     c,4 r8 \mvTr d\pE-\solo e c d g,
-    c4 r8 g' c,4 r8 c'
+    c4 r8 g'\fE c,4 r8 c'\pE
     h g fis g a c, d16 c h a
-    g4 r8 d' g,4 r8 g
+    g4 r8 d'\fE g,4 r8 g\pE
     c'8. h16 a8 fis h8. a16 g8 e %15
     a8. g16 fis8 d r fis g d
     e16 c h a d8 d, \sbOn g \tuplet 3/2 8 { g'16\fE fis g a g a fis e fis }
@@ -245,12 +245,12 @@ GloriaBassFigures = \figuremode {
   q q4 <8>
   r2 \bo <[6] 4>4 \bc <[5] 3>
   r4. \bo <[6 5]> \bc q4 %10
-  r2. <7>8 q
+  r2 \bo <[6]>8 \bc q <7> q
   r4. <7>8 r2
-  r2. <_+>4
+  \bo <[6]>4 <6>4. \bc <[6]>8 <_+>4
   r4. <_+>8 r2
-  r1 %15
-  r
+  r2 <[5+]> %15
+  r4 \bo <[6]>8 <_+>4 <6> \bc <[_+]>8
   r4 <4>8 <_+> r4. <[6 5]>8
   r4 \bo <[6 5]>8 <_+> r4 \bc <[6 \l]>
   q4. <7 _+>8 r4 <[6]>
@@ -585,7 +585,7 @@ CumSanctoOrgano = {
 CumSanctoBassFigures = \figuremode {
   r1 %102
   <5 4>4 <\t 3> <4 2> <6>
-  <4 2> <[6]> <7> <8>8 <7>
+  <4 2> <[6]> <7> <8>8 <7!>
   r2 <7> %105
   q4 <6 5> <5 3> <6 4>
   <\t \t> <5 3>8 <4 2> <[5 3]>2
