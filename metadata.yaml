@@ -1,0 +1,17 @@
+composer: Boog, Johann Nepomuk
+title: Missa solennis
+id: (A-Ed A 22)
+genre: mass
+scoring: S, A, T, 2 B (solo), S, A, T, B (coro), 2 clno (C), a-trb solo, timp (C–G), 2 vl, b, org solo
+sources:
+  1:
+    siglum: A-Ed
+    shelfmark: A 22
+    type: manuscript copy
+    date: unknown
+    rism: 600037838
+    url: http://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/821.html
+github: boog-missa-solennis
+imslp: Missa_solennis_Quasi_cedrus_exaltata_sum_in_Libano_(Boog,_Johann_Nepomuk)
+notes:
+
