@@ -1,17 +1,21 @@
-composer: Boog, Johann Nepomuk
+composer:
+  last: Boog
+  first: Johann Nepomuk
 title: Missa solennis
-id: (A-Ed A 22)
+subtitle: Quasi cedrus exaltata sum in Libano
 genre: mass
-scoring: S, A, T, 2 B (solo), S, A, T, B (coro), 2 clno (C), a-trb solo, timp (C–G), 2 vl, b, org solo
+scoring: S, A, T, 2 B (solo), S, A, T, B (coro), 2 clno (C), a-trb, timp (C–G), 2 vl, b, org solo
+license: cc-by-sa-4.0
 sources:
-  1:
+  B1:
     siglum: A-Ed
     shelfmark: A 22
-    type: manuscript copy
-    date: unknown
     rism: 600037838
     url: http://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/821.html
-github: boog-missa-solennis
+    license: public domain
+    principal: true
+    notes: two pages missing between Basso-1.jpg and Basso-2.jpg in digital version at A-Ed
 imslp: Missa_solennis_Quasi_cedrus_exaltata_sum_in_Libano_(Boog,_Johann_Nepomuk)
-notes: two pages missing between Basso-1.jpg and Basso-2.jpg in digital version at A-Ed
-
+parts:
+  ottoni: Clarino I, II in C\\Timpani in C–G
+  org: Organo solo

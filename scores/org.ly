@@ -1,53 +1,13 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-
-\paper {
-  indent = 1\cm
-  top-margin = 1.5\cm
-  system-separator-markup = ##f
-  system-system-spacing =
-    #'((basic-distance . 18)
-       (minimum-distance . 18)
-       (padding . -100)
-       (stretchability . 0))
-
-  top-system-spacing =
-    #'((basic-distance . 12)
-       (minimum-distance . 12)
-       (padding . -100)
-       (stretchability . 0))
-
-  top-markup-spacing =
-    #'((basic-distance . 0)
-       (minimum-distance . 0)
-       (padding . -100)
-       (stretchability . 0))
-
-  markup-system-spacing =
-    #'((basic-distance . 12)
-       (minimum-distance . 12)
-       (padding . -100)
-       (stretchability . 0))
-
-  systems-per-page = #9
-}
-
-#(set-global-staff-size 17.82)
-
-\layout {
-  \context {
-    \Staff
-    instrumentName = "org"
-  }
-}
+#(define option-instrument-name "org")
+\include "score_settings/one-staff.ly"
 
 \book {
   \bookpart {
-    \header {
-      number = "1"
-      title = "K Y R I E"
-    }
+    \section "1" "Kyrie"
+    \addTocEntry
     \paper { indent = 2\cm }
     \score {
       <<
@@ -60,9 +20,8 @@
     }
   }
   \bookpart {
-    \header {
-      subtitle = "C H R I S T E"
-    }
+    \subsection "Christe"
+    \addTocEntry
     \score {
       <<
         \new Staff { \ChristeOrgano }
@@ -71,10 +30,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "2"
-      title = "G L O R I A"
-    }
+    \section "2" "Gloria"
+    \addTocEntry
     \score {
       <<
         \new Staff { \GloriaOrgano }
@@ -83,9 +40,8 @@
     }
   }
   \bookpart {
-    \header {
-      subtitle = "Q U I   T O L L I S"
-    }
+    \subsection "Qui tollis"
+    \addTocEntry
     \paper { systems-per-page = #6 }
     \score {
       <<
@@ -95,9 +51,8 @@
     }
   }
   \bookpart {
-    \header {
-      subtitle = "Q U O N I A M"
-    }
+    \subsection "Quoniam"
+    \addTocEntry
     \paper {
       top-system-spacing.basic-distance = #10
       top-system-spacing.minimum-distance = #10
@@ -111,7 +66,7 @@
     }
     \score {
       <<
-        \new PianoStaff <<
+        \new PianoStaff \with { \setGroupDistance #11 #15 } <<
           \set PianoStaff.instrumentName = \markup \center-column { "org" "solo" }
           \new Staff {
             \set Staff.instrumentName = \markup \null
@@ -127,9 +82,8 @@
     }
   }
   \bookpart {
-    \header {
-      subtitle = "C U M   S A N C T O   S P I R I T U"
-    }
+    \subsection "Cum Sancto Spiritu"
+    \addTocEntry
     \score {
       <<
         \new Staff { \CumSanctoOrgano }
@@ -138,10 +92,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "3"
-      title = "C R E D O"
-    }
+    \section "3" "Credo"
+    \addTocEntry
     \score {
       <<
         \new Staff { \CredoOrgano }
@@ -150,9 +102,8 @@
     }
   }
   \bookpart {
-    \header {
-      subtitle = "E T   I N C A R N A T U S   E S T"
-    }
+    \subsection "Et incarnatus est"
+    \addTocEntry
     \score {
       <<
         \new Staff { \EtIncarnatusOrgano }
@@ -161,9 +112,8 @@
     }
   }
   \bookpart {
-    \header {
-      subtitle = "E T   R E S U R R E X I T"
-    }
+    \subsection "Et resurrexit"
+    \addTocEntry
     \score {
       <<
         \new Staff { \EtResurrexitOrgano }
@@ -172,10 +122,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "4"
-      title = "S A N C T U S"
-    }
+    \section "4" "Sanctus"
+    \addTocEntry
     \score {
       <<
         \new Staff { \SanctusOrgano }
@@ -184,10 +132,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "5"
-      title = "B E N E D I C T U S"
-    }
+    \section "5" "Benedictus"
+    \addTocEntry
     \score {
       <<
         \new Staff { \BenedictusOrgano }
@@ -196,9 +142,8 @@
     }
   }
   \bookpart {
-    \header {
-      subtitle = "O S A N N A"
-    }
+    \subsection "Osanna"
+    \addTocEntry
     \paper { systems-per-page = #6 }
     \score {
       <<
@@ -208,10 +153,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "6"
-      title = "A G N U S   D E I"
-    }
+    \section "6" "Agnus Dei"
+    \addTocEntry
     \score {
       <<
         \new Staff { \AgnusOrgano }

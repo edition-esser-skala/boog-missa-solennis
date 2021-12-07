@@ -1,37 +1,45 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
+\include "score_settings/full-score.ly"
 
-\paper {
-  #(set-paper-size "a4landscape")
-  top-margin = 1\cm
-  bottom-margin = .5\cm
-  outer-margin = 2\cm
-  inner-margin = 1.5\cm
-  indent = 1\cm
-  #(define (page-post-process layout pages) (ly:create-toc-file layout pages))
+paperSevenStaves = \paper {
+  top-system-spacing.basic-distance = #10
+  top-system-spacing.minimum-distance = #10
+  top-markup-spacing.basic-distance = #0
+  top-markup-spacing.minimum-distance = #0
+  markup-system-spacing.basic-distance = #10
+  markup-system-spacing.minimum-distance = #10
+  systems-per-page = #2
 }
 
-#(set-global-staff-size 15.87)
+paperFiveStaves = \paper {
+  system-system-spacing.basic-distance = #30
+  system-system-spacing.minimum-distance = #30
+  systems-per-page = #2
+}
+
+paperFourStaves = \paper {
+  system-system-spacing.basic-distance = #22
+  system-system-spacing.minimum-distance = #22
+  systems-per-page = #3
+}
 
 \book {
   \bookpart {
-    \header {
-      number = "1"
-      title = "K Y R I E"
-    }
+    \section "1" "Kyrie"
+    \addTocEntry
     \paper { indent = 3\cm }
-    \tocSection "1" "Kyrie"
     \score {
       <<
-        \new StaffGroup \with { \smallGroupDistance } <<
+        \new StaffGroup <<
           \new Staff <<
-            \set Staff.instrumentName = \markup \center-column { "Clarino I, II" "in C" }
+            \set Staff.instrumentName = \transposedName "Clarino I, II" "C" ""
             \partCombine \KyrieClarinoI \KyrieClarinoII
           >>
         >>
-        \new Staff \with { \smallStaffDistance } {
-          \set Staff.instrumentName = \markup \center-column { "Timpani" "in C–G" }
+        \new Staff {
+          \set Staff.instrumentName = \transposedTimp "C" "" "G" ""
           \KyrieTimpani
         }
         \new StaffGroup <<
@@ -49,25 +57,19 @@
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = \SopranoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitSoprano
             \new Voice = "Soprano" { \dynamicUp \KyrieSopranoNotes }
           }
           \new Lyrics \lyricsto Soprano \KyrieSopranoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \AltoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitAlto
             \new Voice = "Alto" { \dynamicUp \KyrieAltoNotes }
           }
           \new Lyrics \lyricsto Alto \KyrieAltoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \TenoreIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitTenore
             \new Voice = "Tenore" { \dynamicUp \KyrieTenoreNotes }
           }
           \new Lyrics \lyricsto Tenore \KyrieTenoreLyrics
@@ -92,11 +94,9 @@
     }
   }
   \bookpart {
-    \header {
-      subtitle = "C H R I S T E"
-    }
-    \tocSubsection "1.2" "Christe"
-    \paper { systems-per-page = #2 }
+    \subsection "Christe"
+    \addTocEntry
+    \paperFourStaves
     \score {
       <<
         \new StaffGroup <<
@@ -133,20 +133,17 @@
     }
   }
   \bookpart {
-    \header {
-      number = "2"
-      title = "G L O R I A"
-    }
-    \tocSection "2" "Gloria"
+    \section "2" "Gloria"
+    \addTocEntry
     \score {
       <<
-        \new StaffGroup \with { \smallGroupDistance } <<
+        \new StaffGroup <<
           \new Staff <<
             \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
             \partCombine \GloriaClarinoI \GloriaClarinoII
           >>
         >>
-        \new Staff \with { \smallStaffDistance } {
+        \new Staff {
           \set Staff.instrumentName = "timp"
           \GloriaTimpani
         }
@@ -202,10 +199,9 @@
     }
   }
   \bookpart {
-    \header {
-      subtitle = "Q U I   T O L L I S"
-    }
-    \tocSubsection "2.2" "Qui tollis"
+    \subsection "Qui tollis"
+    \addTocEntry
+    \paperSevenStaves
     \score {
       <<
         \new StaffGroup <<
@@ -260,23 +256,13 @@
     }
   }
   \bookpart {
-    \header {
-      subtitle = "Q U O N I A M"
-    }
-    \tocSubsection "2.3" "Quoniam"
-    \paper {
-      top-markup-spacing.basic-distance = #0
-      top-markup-spacing.minimum-distance = #0
-      markup-system-spacing.basic-distance = #7
-      markup-system-spacing.minimum-distance = #7
-      top-system-spacing.basic-distance = #7
-      top-system-spacing.minimum-distance = #7
-      systems-per-page = #2
-    }
+    \subsection "Quoniam"
+    \addTocEntry
+    \paperFiveStaves
     \score {
       <<
         \new StaffGroup <<
-          \new GrandStaff \with { \smallGroupDistance } <<
+          \new GrandStaff <<
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
@@ -311,19 +297,17 @@
     }
   }
   \bookpart {
-    \header {
-      subtitle = "C U M   S A N C T O   S P I R I T U"
-    }
-    \tocSubsection "2.4" "Cum Sancto Spiritu"
+    \subsection "Cum Sancto Spiritu"
+    \addTocEntry
     \score {
       <<
-        \new StaffGroup \with { \smallGroupDistance } <<
+        \new StaffGroup <<
           \new Staff <<
             \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
             \partCombine \CumSanctoClarinoI \CumSanctoClarinoII
           >>
         >>
-        \new Staff \with { \smallStaffDistance } {
+        \new Staff {
           \set Staff.instrumentName = "timp"
           \CumSanctoTimpani
         }
@@ -379,20 +363,17 @@
     }
   }
   \bookpart {
-    \header {
-      number = "3"
-      title = "C R E D O"
-    }
-    \tocSection "3" "Credo"
+    \section "3" "Credo"
+    \addTocEntry
     \score {
       <<
-        \new StaffGroup \with { \smallGroupDistance } <<
+        \new StaffGroup <<
           \new Staff <<
             \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
             \partCombine \CredoClarinoI \CredoClarinoII
           >>
         >>
-        \new Staff \with { \smallStaffDistance } {
+        \new Staff {
           \set Staff.instrumentName = "timp"
           \CredoTimpani
         }
@@ -448,13 +429,12 @@
     }
   }
   \bookpart {
-    \header {
-      subtitle = "E T   I N C A R N A T U S   E S T"
-    }
-    \tocSubsection "3.2" "Et incarnatus est"
+    \subsection "Et incarnatus est"
+    \addTocEntry
+    \paperSevenStaves
     \score {
       <<
-        \new Staff {
+        \new Staff \with { \smallStaffDistance } {
           \set Staff.instrumentName = \markup \center-column { "trb" "solo" }
           \EtIncarnatusTrombone
         }
@@ -504,19 +484,17 @@
     }
   }
   \bookpart {
-    \header {
-      subtitle = "E T   R E S U R R E X I T"
-    }
-    \tocSubsection "3.3" "Et resurrexit"
+    \subsection "Et resurrexit"
+    \addTocEntry
     \score {
       <<
-        \new StaffGroup \with { \smallGroupDistance } <<
+        \new StaffGroup <<
           \new Staff <<
             \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
             \partCombine \EtResurrexitClarinoI \EtResurrexitClarinoII
           >>
         >>
-        \new Staff \with { \smallStaffDistance } {
+        \new Staff {
           \set Staff.instrumentName = "timp"
           \EtResurrexitTimpani
         }
@@ -572,20 +550,17 @@
     }
   }
   \bookpart {
-    \header {
-      number = "4"
-      title = "S A N C T U S"
-    }
-    \tocSection "4" "Sanctus"
+    \section "4" "Sanctus"
+    \addTocEntry
     \score {
       <<
-        \new StaffGroup \with { \smallGroupDistance } <<
+        \new StaffGroup <<
           \new Staff <<
             \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
             \partCombine \SanctusClarinoI \SanctusClarinoII
           >>
         >>
-        \new Staff \with { \smallStaffDistance } {
+        \new Staff {
           \set Staff.instrumentName = "timp"
           \SanctusTimpani
         }
@@ -641,12 +616,9 @@
     }
   }
   \bookpart {
-    \header {
-      number = "5"
-      title = "B E N E D I C T U S"
-    }
-    \tocSection "4" "Benedictus"
-    \paper { systems-per-page = #2 }
+    \section "5" "Benedictus"
+    \addTocEntry
+    \paperFourStaves
     \score {
       <<
         \new StaffGroup <<
@@ -683,19 +655,17 @@
     }
   }
   \bookpart {
-    \header {
-      subtitle = "O S A N N A"
-    }
-    \tocSubsection "5.2" "Osanna"
+    \subsection "Osanna"
+    \addTocEntry
     \score {
       <<
-        \new StaffGroup \with { \smallGroupDistance } <<
+        \new StaffGroup <<
           \new Staff <<
             \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
             \partCombine \OsannaClarinoI \OsannaClarinoII
           >>
         >>
-        \new Staff \with { \smallStaffDistance } {
+        \new Staff {
           \set Staff.instrumentName = "timp"
           \OsannaTimpani
         }
@@ -751,20 +721,17 @@
     }
   }
   \bookpart {
-    \header {
-      number = "6"
-      title = "A G N U S   D E I"
-    }
-    \tocSection "6" "Agnus Dei"
+    \section "6" "Agnus Dei"
+    \addTocEntry
     \score {
       <<
-        \new StaffGroup \with { \smallGroupDistance } <<
+        \new StaffGroup <<
           \new Staff <<
             \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
             \partCombine \AgnusClarinoI \AgnusClarinoII
           >>
         >>
-        \new Staff \with { \smallStaffDistance } {
+        \new Staff {
           \set Staff.instrumentName = "timp"
           \AgnusTimpani
         }
